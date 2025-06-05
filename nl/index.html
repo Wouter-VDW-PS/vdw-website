@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home - VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/vdw-website/style.css">
+  <link rel="stylesheet" href="/vdw-website/style.css" />
+  <style>
+    .split-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .split-columns > div {
+      flex: 1;
+      min-width: 300px;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+    .split-columns h3 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,16 +40,51 @@
     </div>
   </header>
   <main class="container">
-    <h2>Welkom op de website van VDW Projects & Solutions</h2>
-    <p><strong>Technisch sterk. Flexibel in uitvoering.</strong></p>
+    <h2>VDW Projects & Solutions</h2>
+    <p><strong>Uw partner voor elektrische totaaloplossingen in industrie en residentieel.</strong></p>
     <p>
-    VDW Projects & Solutions biedt consultancy, engineering en projectmanagement voor elektrische installaties — van industriële hoogspanningsprojecten tot slimme residentiële oplossingen.
+      Wij bieden advies, engineering en projectopvolging voor elektrische installaties — 
+      van technische voorbereiding tot uitvoering, zowel in industriële als residentiële toepassingen.
     </p>
-    <p>
-    Actief op zowel laag- als hoogspanningsniveau (tot 36kV), met expertise in onder meer instrumentatie, PLC- & DCS-sturingen, laag- en hoogspanningsverdelingen, noodstroomvoorziening en EMC.
-    </p>
-    <p>
-    Betrouwbare ondersteuning in elke fase van je project: van ontwerp en analyse tot opvolging en uitvoering.
+
+    <div class="split-columns">
+      <div>
+        <h3>⚙️ Industrie</h3>
+        <strong>Projectmanagement</strong>
+        <ul>
+          <li>Opvolging (klant, engineering & constructie)</li>
+          <li>Voorbereiding & planning</li>
+        </ul>
+        <strong>E&I Engineering</strong>
+        <ul>
+          <li>PLC / DCS</li>
+          <li>Laag- en hoogspanningsverdeling (tot 36kV)</li>
+          <li>EMC, AREI, ATEX</li>
+          <li>Noodstroomvoorziening (UPS & Genset)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>🏠 Residentieel</h3>
+        <strong>Elektrische installaties</strong>
+        <ul>
+          <li>Woningen & appartementen</li>
+          <li>Traditioneel of met domotica</li>
+        </ul>
+        <strong>Laadpalen & thuisbatterijen</strong>
+        <ul>
+          <li>Met slimme load balancing</li>
+          <li>Configuratie op maat van verbruik en productie</li>
+        </ul>
+        <strong>Oplossingen op maat</strong>
+        <ul>
+          <li>Gepersonaliseerd advies voor elk project</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 2rem;">
+      👉 Ontdek onze <a href="/vdw-website/nl/diensten.html">diensten</a> of bekijk enkele <a href="/vdw-website/nl/projecten.html">projecten</a> in de praktijk.
     </p>
   </main>
   <footer>
