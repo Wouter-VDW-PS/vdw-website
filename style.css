@@ -47,18 +47,19 @@ footer {
     font-size: 0.9rem;
 }
 
-.contact-form {
-  background-color: #eaf3fc;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 102, 204, 0.1);
+.custom-contact {
+  background: #eaf3fc;
+  padding: 2.5rem;
+  border-radius: 16px;
   max-width: 900px;
-  margin: auto;
+  margin: 2rem auto;
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.1);
 }
 
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
+.custom-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-row {
@@ -67,42 +68,60 @@ footer {
   gap: 1rem;
 }
 
-.form-group {
+.form-field {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.full-width {
+.form-field.full {
   width: 100%;
-  margin-top: 1rem;
 }
 
-input, select, textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #333;
-  padding: 0.5rem 0;
-  font-size: 1rem;
-  outline: none;
-}
-
-label {
+.custom-contact label {
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
+  color: #333;
 }
 
-button {
+.custom-contact input,
+.custom-contact select,
+.custom-contact textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #444;
+  padding: 0.4rem 0;
+  font-size: 1rem;
+  color: #111;
+}
+
+.custom-contact input:focus,
+.custom-contact textarea:focus,
+.custom-contact select:focus {
+  outline: none;
+  border-bottom: 2px solid #0077cc;
+}
+
+.custom-contact button {
+  align-self: flex-start;
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.6rem;
   font-size: 1rem;
   border-radius: 6px;
-  margin-top: 2rem;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #004c99;
+.custom-contact button:hover {
+  background-color: #004b99;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
 }
