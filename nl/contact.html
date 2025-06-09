@@ -25,6 +25,36 @@
 <p>
 Heeft u interesse in een samenwerking of wenst u meer informatie? Neem gerust contact op.
 </p>
+<form action="https://formsubmit.co/info@vdw-ps.be" method="POST">
+  <input type="hidden" name="_next" value="/vdw-website/nl/bedankt.html" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <label for="voornaam">Voornaam*</label><br />
+  <input type="text" id="voornaam" name="Voornaam" required /><br /><br />
+
+  <label for="naam">Naam*</label><br />
+  <input type="text" id="naam" name="Naam" required /><br /><br />
+
+  <label for="email">E-mail*</label><br />
+  <input type="email" id="email" name="Email" required /><br /><br />
+
+  <label for="telefoon">Telefoonnummer</label><br />
+  <input type="tel" id="telefoon" name="Telefoon" /><br /><br />
+
+  <label for="soort">Type klant*</label><br />
+  <select id="soort" name="Type" required>
+    <option value="">Selecteer een optie</option>
+    <option value="Industrieel">Industrieel</option>
+    <option value="Residentieel">Residentieel</option>
+  </select><br /><br />
+
+  <label for="bericht">Bericht*</label><br />
+  <textarea id="bericht" name="Bericht" rows="5" required></textarea><br /><br />
+
+  <button type="submit">Verstuur</button>
+</form>
+
+    
 <ul>
   <li><strong>Naam:</strong> Van De Wiele Wouter</li>
   <li><strong>Bedrijf:</strong> VDW Projects & Solutions</li>
