@@ -6,19 +6,27 @@
   <title>Industrieel - VDW Projects & Solutions</title>
   <link rel="stylesheet" href="/vdw-website/style.css" />
   <style>
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .project-card {
-      flex: 1 1 calc(50% - 2rem);
-      background: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
+ .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  flex: 1 1 calc(50% - 2rem);
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Responsief gedrag op kleinere schermen */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
+}
     .project-card .project-header {
       background-color: #f0f0f0;
       padding: 1rem;
