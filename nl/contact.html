@@ -25,34 +25,54 @@
 <p>
 Heeft u interesse in een samenwerking of wenst u meer informatie? Neem gerust contact op.
 </p>
-<form action="https://formsubmit.co/info@vdw-ps.be" method="POST">
-  <input type="hidden" name="_next" value="/vdw-website/nl/bedankt.html" />
-  <input type="hidden" name="_captcha" value="false" />
+<section class="contact-form">
+  <form action="https://formsubmit.co/info@vdw-ps.be" method="POST">
+    <h2>Contacteer ons</h2>
 
-  <label for="voornaam">Voornaam*</label><br />
-  <input type="text" id="voornaam" name="Voornaam" required /><br /><br />
+    <div class="form-row">
+      <div class="form-group">
+        <label for="voornaam">Voornaam</label>
+        <input type="text" id="voornaam" name="Voornaam" required />
+      </div>
+      <div class="form-group">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="Naam" required />
+      </div>
+    </div>
 
-  <label for="naam">Naam*</label><br />
-  <input type="text" id="naam" name="Naam" required /><br /><br />
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="Email" required />
+      </div>
+      <div class="form-group">
+        <label for="tel">Telefoonnummer</label>
+        <input type="tel" id="tel" name="Telefoonnummer" />
+      </div>
+    </div>
 
-  <label for="email">E-mail*</label><br />
-  <input type="email" id="email" name="Email" required /><br /><br />
+    <div class="form-group full-width">
+      <label for="soort">Soort klant</label>
+      <select id="soort" name="Klanttype" required>
+        <option value="">Selecteer...</option>
+        <option value="Industrieel">Industrieel</option>
+        <option value="Residentieel">Residentieel</option>
+      </select>
+    </div>
 
-  <label for="telefoon">Telefoonnummer</label><br />
-  <input type="tel" id="telefoon" name="Telefoon" /><br /><br />
+    <div class="form-group full-width">
+      <label for="bericht">Bericht</label>
+      <textarea id="bericht" name="Bericht" rows="5" required></textarea>
+    </div>
 
-  <label for="soort">Type klant*</label><br />
-  <select id="soort" name="Type" required>
-    <option value="">Selecteer een optie</option>
-    <option value="Industrieel">Industrieel</option>
-    <option value="Residentieel">Residentieel</option>
-  </select><br /><br />
+    <!-- FormSubmit config -->
+    <input type="hidden" name="_next" value="https://wouter-vdw-ps.github.io/vdw-website/nl/bedankt.html" />
+    <input type="hidden" name="_captcha" value="false" />
 
-  <label for="bericht">Bericht*</label><br />
-  <textarea id="bericht" name="Bericht" rows="5" required></textarea><br /><br />
+    <button type="submit">Verzenden</button>
+  </form>
+</section>
 
-  <button type="submit">Verstuur</button>
-</form>
 
     
 <ul>
