@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Residential – VDW Projects & Solutions</title>
+  <link rel="stylesheet" href="/vdw-website/style.css" />
+  <style>
+    .project-card {
+      background:#f9f9f9; border-radius:8px;
+      box-shadow:0 0 6px rgba(0,0,0,0.1);
+      overflow:hidden; margin-top:2rem;
+    }
+    .project-header { background:#f0f0f0; padding:1rem; }
+    .project-content-bg {
+      background-size:cover; background-position:center;
+      padding:2rem; color:white; min-height:180px;
+      display:flex; flex-direction:column; justify-content:flex-end;
+    }
+    .overlay { background:rgba(0,0,0,0.5); padding:1rem; border-radius:8px;}
+    .project-card a { color:#fff; text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>VDW Projects & Solutions</h1>
+      <nav>
+        <a href="/vdw-website/en/index.html">Home</a>
+        <a href="/vdw-website/en/industrial.html">Industrial</a>
+        <a href="/vdw-website/en/residential.html">Residential</a>
+        <a href="/vdw-website/en/about.html">About</a>
+        <a href="/vdw-website/en/contact.html">Contact</a>
+        <a href="/vdw-website/nl/index.html">NL</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Residential</h2>
+    <p><strong>Complete electrical solutions for homes and apartments.</strong></p>
+    <p>
+      VDW Projects & Solutions helps homeowners design and implement electrical installations tailored to their usage, comfort and future plans.
+    </p>
+
+    <h3>Services</h3>
+    <ul>
+      <li>Full electrical installations (new builds & renovations)</li>
+      <li>Traditional wiring or home automation</li>
+      <li>Charging stations with load balancing & PV integration</li>
+      <li>Home batteries and energy management</li>
+      <li>Smart solutions customized for your consumption</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Residential Installation – Smart Charging Station</h4>
+      </div>
+      <div class="project-content-bg" style="background-image:url('/vdw-website/assets/Laadpaal.jpg')">
+        <div class="overlay">
+          <p>Charging station with load balancing & home automation for optimal energy use.</p>
+          <a href="/vdw-website/en/charging-station.html">More info →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; padding:2rem 0;">
+      <div style="flex:1 1 200px; margin-bottom:1rem;">
+        <img src="/vdw-website/assets/logo.png" alt="VDW logo" style="max-height:80px;">
+      </div>
+      <div style="flex:2 1 300px; color:#333;">
+        <p style="margin:0;"><strong>VDW Projects & Solutions</strong></p>
+        <p style="margin:0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+        <p style="margin:0;">info@vdw-ps.be</p>
+        <p style="margin:0;">VAT BE1015.830.223</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
