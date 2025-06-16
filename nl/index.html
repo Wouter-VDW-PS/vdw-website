@@ -177,18 +177,22 @@
   </div>
 </footer>
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: { delay: 5000, disableOnInteraction: false },
-      speed: 800,
-      effect: 'slide'
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,        // ÉÉN slide in beeld
+    centeredSlides: false,   // niet gecentreerd meerdere
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    effect: 'slide'
   });
+});
 </script>
+
 
 </body>
 </html>
