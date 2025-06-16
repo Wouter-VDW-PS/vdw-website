@@ -127,25 +127,19 @@ footer {
     flex-direction: column;
   }
  }
-/* ─── HERO SLIDER MET JS ───────────────────────────────── */
+/* ─── HERO SLIDER FIX ─────────────────────────────────── */
 
-.hero-slideshow {
-  background-color: #003366;  /* jouw kenmerkende blauw */
+.hero-slideshow,
+.slideshow-wrapper {
+  background-color: #003366; /* header-blauw achter slides */
   position: relative;
   width: 100%;
   height: 500px;
   overflow: hidden;
 }
 
-.slideshow-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 .slides-track {
   display: flex;
-  width: calc(100%*6); /* bij 6 slides, 6x100% breedte*/
   height: 100%;
   transition: transform 1s ease;
 }
@@ -163,13 +157,13 @@ footer {
   display: block;
 }
 
-/* Overlay-tekst erboven */
 .header-text-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   padding: 2rem;
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 1;
@@ -181,4 +175,3 @@ main.container {
   z-index: 2;
   background-color: #fff;
 }
-
