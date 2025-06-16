@@ -144,12 +144,14 @@ footer {
   width: 100%;
   height: 500px;
   position: relative;
+    overflow: hidden;
 }
 
 /* Swiper container vult hele wrapper */
 .hero-slideshow .swiper-container {
   width: 100%;
   height: 100%;
+    overflow: hodden;
 }
 
 /* Slide-afbeeldingen altijd cover, nooit contain */
