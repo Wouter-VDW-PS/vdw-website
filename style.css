@@ -183,4 +183,21 @@ main.container {
   z-index: 1;
 }
 
+/* ─── LOGO RECHTSBOVEN IN HEADER ───────────────────── */
+.hero-slideshow .slider-inner {
+  position: relative;    /* wrapper staat nu position:relative */
+}
+
+.hero-slideshow .header-logo {
+  position: absolute;
+  top: 1rem;             /* afstand tot bovenkant */
+  right: 1rem;           /* afstand tot rechterkant */
+  z-index: 20;           /* bovenop slider en overlay */
+}
+
+.hero-slideshow .header-logo img {
+  max-height: 60px;      /* pas die hoogte gerust aan */
+  width: auto;
+  display: block;
+}
 
