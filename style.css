@@ -134,6 +134,7 @@ footer {
   width: 100%;
   background-color: #003366;
   overflow: hidden;
+    padding: 0;
 }
 
 /* Maak je container binnen de header exact hetzelfde als je page-container */
