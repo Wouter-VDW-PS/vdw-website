@@ -7,42 +7,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/vdw-website/style.css?v=17" />
   <style>
-    /* alleen de extra overrides voor de slider, copy/paste uit je NL-versie */
-    .hero-slideshow {
-      width: 100%;
-      background: #003366;
-      overflow: hidden;
-      padding: 0;
-    }
-    .hero-slideshow .slider-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-      height: 500px;
-    }
-    .hero-slideshow .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .hero-slideshow .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-    .hero-slideshow .header-text-overlay {
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%;
-      padding: 2rem;
-      display: flex; flex-direction: column;
-      justify-content: flex-start; align-items: flex-start;
-      z-index: 10; color: #fff;
-    }
-        .hero-slideshow .swiper-slide {
-      flex: 0 0 100%;
-    }
-
     .split-columns {
       display: flex;
       flex-wrap: wrap;
@@ -57,7 +21,54 @@
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.05);
     }
-    main.container { position: relative; z-index: 1; }
+    .split-columns h3 {
+      margin-top: 0;
+    }
+    .hero-slideshow {
+    width: 100%;
+    background: #003366;
+    overflow: hidden;
+    padding: 0;              /* geen extra padding */
+  }
+  .hero-slideshow .slider-inner {
+    max-width: 1200px;       /* zelfde max breedte als je .container */
+    margin: 0 auto;          /* centreer */
+    position: relative;      /* voor overlay */
+    height: 500px;           /* vaste hoogte */
+  }
+  .hero-slideshow .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-slideshow .swiper-wrapper {
+    /* hoeft niks extra */
+  }
+  .hero-slideshow .swiper-slide {
+    /* 100% breedte van .slider-inner */
+    flex: 0 0 100%;
+  }
+  .hero-slideshow .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* vult de slide volledig */
+    object-position: center; /* center in box */
+    display: block;
+  }
+  .hero-slideshow .header-text-overlay {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    padding: 2rem;
+    display: flex; flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 10;
+    color: #fff;
+  }
+  /* Zorg dat content er netjes onder ligt */
+  main.container {
+    position: relative;
+    z-index: 1;
+  }
   </style>
 </head>
 <body>
