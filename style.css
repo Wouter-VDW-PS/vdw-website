@@ -127,28 +127,38 @@ footer {
     flex-direction: column;
   }
  }
-/* ─── CONSTRAIN HERO SLIDER TO CONTAINER ──────────────── */
+/* ─── HERO SLIDER SELF-CONTAINED ──────────────────────── */
 
-/* Houd header full-width en donkerblauw */
+/* parent header full-width, donkerblauw */
 .hero-slideshow {
   width: 100%;
-  background-color: #003366;
+  background: #003366;
   overflow: hidden;
-    padding: 0;
+  padding: 0;
 }
 
-/* Maak je container binnen de header exact hetzelfde als je page-container */
-.hero-slideshow > .container {
-  max-width: 1200px;   /* hetzelfde als .container elders */
-  margin: 0 auto;      /* centreer */
-  padding: 0;          /* geen extra padding */
-  position: relative;  /* voor overlay */
+/* inner wrapper exactly content-width */
+.hero-slideshow .slider-inner {
+  max-width: 1200px;         /* match jouw gewone .container */
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  position: relative;
 }
 
-/* Laat Swiper 100% van die container vullen */
+/* Swiper container vult hele wrapper */
 .hero-slideshow .swiper-container {
   width: 100%;
-  height: 500px;       /* zelfde hoogte als je header-hoogte */
+  height: 100%;
+}
+
+/* Slide-afbeeldingen altijd cover, nooit contain */
+.hero-slideshow .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* ← belangrijk verschil */
+  object-position: center;
+  display: block;
 }
 
 /* Overlay erboven */
@@ -157,15 +167,18 @@ footer {
   top: 0; left: 0;
   width: 100%; height: 100%;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   z-index: 10;
   color: #fff;
 }
 
-
-
+/* main-content ligt er netjes onder */
 main.container {
   position: relative;
   z-index: 1;
-  background: #fff;
 }
+
 
