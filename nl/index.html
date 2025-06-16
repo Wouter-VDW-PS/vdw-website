@@ -23,6 +23,40 @@
     .split-columns h3 {
       margin-top: 0;
     }
+    /* ===== Hero‐slider styling ===== */
+    .hero-slideshow {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background-color: #003366;
+    }
+    .hero-slideshow .slides-track {
+      display: flex;
+      transition: transform 1s ease;
+    }
+    .hero-slideshow .slide {
+      flex: 0 0 100%;
+    }
+    .hero-slideshow .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+    .hero-slideshow .header-text-overlay {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      padding: 2rem;
+      display: flex; flex-direction: column;
+      justify-content: flex-start; align-items: flex-start;
+      z-index: 2; color: #fff;
+    }
+    main.container {
+      position: relative; z-index: 1;
+      background-color: #fff;
+    }
   </style>
 </head>
   
@@ -127,32 +161,24 @@
 </footer>
 
 <script>
-  (function() {
-    if (window.sliderInitialized) return;       // guard tegen dubbel laden
-    window.sliderInitialized = true;
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const track = document.querySelector('.slides-track');
+    window.addEventListener('load', function() {
+      const track = document.querySelector('.hero-slideshow .slides-track');
       const slides = Array.from(track.children);
       let idx = 0;
-
       // Breedte instellen (N slides × 100%)
       track.style.width = `${slides.length * 100}%`;
-
-      // Iedere slide 100% containerbreedte
+      // Elke slide 100% containerbreedte
       slides.forEach(slide => slide.style.flex = '0 0 100%');
-
       // Startpositie
       track.style.transform = 'translateX(0)';
 
-      // Één interval, 8 s per keer
-      window.sliderInterval = setInterval(() => {
+      // Één interval, 8 seconden per slide
+      setInterval(() => {
         idx = (idx + 1) % slides.length;
         track.style.transform = `translateX(-${100 * idx}%)`;
       }, 8000);
     });
-  })();
-</script>
+  </script>
 
 
 </body>
