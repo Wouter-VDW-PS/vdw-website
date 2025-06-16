@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home - VDW Projects & Solutions</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="/vdw-website/style.css?v=15" />
   <style>
     .split-columns {
@@ -62,19 +66,33 @@
   
 <body>
 <header class="hero-slideshow">
-  <!-- De slides zelf: één container, één track, N slides -->
- <div class="slideshow-wrapper">
-    <div class="slides-track">
-      <div class="slide"><img src="/vdw-website/assets/Slide1.jpg" alt=""></div>
-      <div class="slide"><img src="/vdw-website/assets/Slide2.jpg" alt=""></div>
-      <div class="slide"><img src="/vdw-website/assets/Slide3.jpeg" alt=""></div>
-      <div class="slide"><img src="/vdw-website/assets/Slide4.jpg" alt=""></div>
-      <div class="slide"><img src="/vdw-website/assets/Slide5.jpg" alt=""></div>
-      <div class="slide"><img src="/vdw-website/assets/Slide6.jpg" alt=""></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide1.jpg" alt="Slide 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide2.jpg" alt="Slide 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide3.jpeg" alt="Slide 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide4.jpg" alt="Slide 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide5.jpg" alt="Slide 5" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/vdw-website/assets/Slide6.jpg" alt="Slide 6" />
+      </div>
     </div>
+    <!-- optioneel: paginatie / navigatie -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
   </div>
 
-  <!-- Jouw logo en navigatie erboven -->
   <div class="header-text-overlay">
     <h1>VDW Projects & Solutions</h1>
     <nav>
@@ -87,6 +105,7 @@
     </nav>
   </div>
 </header>
+
 
 <main class="container">
   <h2>VDW Projects & Solutions</h2>
@@ -160,25 +179,29 @@
   </div>
 </footer>
 
-<script>
-    window.addEventListener('load', function() {
-      const track = document.querySelector('.hero-slideshow .slides-track');
-      const slides = Array.from(track.children);
-      let idx = 0;
-      // Breedte instellen (N slides × 100%)
-      track.style.width = `${slides.length * 100}%`;
-      // Elke slide 100% containerbreedte
-      slides.forEach(slide => slide.style.flex = '0 0 100%');
-      // Startpositie
-      track.style.transform = 'translateX(0)';
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-      // Één interval, 8 seconden per slide
-      setInterval(() => {
-        idx = (idx + 1) % slides.length;
-        track.style.transform = `translateX(-${100 * idx}%)`;
-      }, 8000);
+<!-- Init Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,           // elke 5 seconden
+        disableOnInteraction: false,
+      },
+      effect: 'slide',         // slide-animatie
+      speed: 800,              // 0.8s overgang
+      // pagination: { el: '.swiper-pagination' },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev'
+      // },
     });
-  </script>
+  });
+</script>
+
 
 
 </body>
