@@ -147,17 +147,6 @@ footer {
   height: 500px;
 }
 
-.slide img {
-  width: 100%;
-  height: auto;           /* laat de hoogte autonoom meeschalen */
-  max-height: 500px;      /* behoud je header-hoogte */
-  object-fit: contain;    /* toon de volledige afbeelding */
-  object-position: center;
-  display: block;
-  margin: auto;           /* centreert horizontaal */
-}
-
-
 
 /* Animatie van links naar rechts */
 @keyframes slideHorizontaal {
@@ -218,3 +207,12 @@ main.container {
   text-decoration: underline;
 }
 
+.slide img {
+  width: 100%;
+  height: auto;           /* laat de hoogte autonoom meeschalen */
+  max-height: 500px;      /* behoud je header-hoogte */
+  object-fit: contain;    /* toon de volledige afbeelding */
+  object-position: center;
+  display: block;
+  margin: auto;           /* centreert horizontaal */
+}
