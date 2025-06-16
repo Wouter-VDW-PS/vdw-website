@@ -38,8 +38,7 @@
     <div class="slide"><img src="/vdw-website/assets/Slide6.jpg" alt="Slide 6" /></div>
     <!-- Voeg meer slides toe indien nodig -->
   </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
   </div>
   <div class="header-text-overlay">
     <h1>VDW Projects & Solutions</h1>
@@ -125,21 +124,5 @@
 
   </div>
 </footer>
-<script>
-let slideIndex = 0;
-const showSlides = () => {
-  const slides = document.getElementsByClassName("slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // wissel elke 5 seconden
-};
-showSlides();
-</script>
 </body>
 </html>
