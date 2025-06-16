@@ -25,17 +25,36 @@
     }
   </style>
 </head>
+
+  <script>
+  (function() {
+    const track = document.querySelector('.slides-track');
+    const slides = Array.from(track.children);
+    let index = 0;
+    const advance = () => {
+      index = (index + 1) % slides.length;
+      track.style.transform = `translateX(-${100 * index}%)`;
+    };
+    // start eerste slide
+    track.style.transform = 'translateX(0)';
+    // elke 5 seconden naar de volgende
+    setInterval(advance, 5000);
+  })();
+</script>
+
   
 <body>
 <header class="hero-slideshow">
   <!-- De slides zelf: één container, één track, N slides -->
-  <div class="slides-track">
-    <div class="slide"><img src="/vdw-website/assets/Slide1.jpg" alt=""></div>
-    <div class="slide"><img src="/vdw-website/assets/Slide2.jpg" alt=""></div>
-    <div class="slide"><img src="/vdw-website/assets/Slide3.jpeg" alt=""></div>
-    <div class="slide"><img src="/vdw-website/assets/Slide4.jpg" alt=""></div>
-    <div class="slide"><img src="/vdw-website/assets/Slide5.jpg" alt=""></div>
-    <div class="slide"><img src="/vdw-website/assets/Slide6.jpg" alt=""></div>
+ <div class="slideshow-wrapper">
+    <div class="slides-track">
+      <div class="slide"><img src="/vdw-website/assets/Slide1.jpg" alt=""></div>
+      <div class="slide"><img src="/vdw-website/assets/Slide2.jpg" alt=""></div>
+      <div class="slide"><img src="/vdw-website/assets/Slide3.jpeg" alt=""></div>
+      <div class="slide"><img src="/vdw-website/assets/Slide4.jpg" alt=""></div>
+      <div class="slide"><img src="/vdw-website/assets/Slide5.jpg" alt=""></div>
+      <div class="slide"><img src="/vdw-website/assets/Slide6.jpg" alt=""></div>
+    </div>
   </div>
 
   <!-- Jouw logo en navigatie erboven -->
