@@ -1,35 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VDW - Contact</title>
-    <link rel="stylesheet" href="/vdw-website/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – VDW Projects & Solutions</title>
+  <link rel="stylesheet" href="/vdw-website/style.css?v=15" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>VDW Projects & Solutions</h1>
-            <nav>
-                
-<a href="/vdw-website/en/index.html">Home</a>
-<a href="/vdw-website/en/about.html">About</a>
-<a href="/vdw-website/en/services.html">Services</a>
-<a href="/vdw-website/en/projects.html">Projects</a>
-<a href="/vdw-website/en/contact.html">Contact</a>
-<a href="/vdw-website/nl/index.html">NL</a>
+  <header>
+    <div class="container">
+      <h1>VDW Projects & Solutions</h1>
+      <nav>
+        <a href="/vdw-website/en/index.html">Home</a>
+        <a href="/vdw-website/en/industrial.html">Industrial</a>
+        <a href="/vdw-website/en/residential.html">Residential</a>
+        <a href="/vdw-website/en/about.html">About</a>
+        <a href="/vdw-website/en/contact.html">Contact</a>
+        <a href="/vdw-website/nl/index.html">NL</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Contact</h2>
+    <p>
+      Interested in working together or want more information? Feel free to get in touch.
+    </p>
+    <section class="custom-contact">
+      <form action="https://formsubmit.co/info@vdw-ps.be" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="/vdw-website/en/thank-you.html">
 
-            </nav>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First name*</label>
+            <input type="text" id="firstName" name="First name" required>
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last name*</label>
+            <input type="text" id="lastName" name="Last name" required>
+          </div>
         </div>
-    </header>
-    <main class="container">
-        <h2>Contact</h2>
-        <p>Inhoud volgt.</p>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 VDW Projects & Solutions</p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone">
+          </div>
         </div>
-    </footer>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="type">Customer type*</label>
+            <select id="type" name="Customer type" required>
+              <option value="">Select an option</option>
+              <option value="Industrial">Industrial</option>
+              <option value="Residential">Residential</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="message">Message*</label>
+            <textarea id="message" name="Message" rows="5" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <div style="text-align:center; margin:2rem 0;">
+      <a href="https://www.linkedin.com/in/wouter-van-de-wiele-7982b3b7/" target="_blank"
+         style="display:inline-flex; align-items:center; gap:0.5rem; background-color:#0077B5; color:#fff;
+                padding:0.75rem 1.5rem; border-radius:5px; text-decoration:none;">
+        <img src="/vdw-website/assets/linkedin-icon.png" alt="LinkedIn" style="height:20px;">
+        Follow us on LinkedIn
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; padding:2rem 0;">
+      <div style="flex:1 1 200px; margin-bottom:1rem;">
+        <img src="/vdw-website/assets/logo.png" alt="VDW logo" style="max-height:80px;">
+      </div>
+      <div style="flex:2 1 300px; color:#333;">
+        <p style="margin:0;"><strong>VDW Projects & Solutions</strong></p>
+        <p style="margin:0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+        <p style="margin:0;">info@vdw-ps.be</p>
+        <p style="margin:0;">VAT BE1015.830.223</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
