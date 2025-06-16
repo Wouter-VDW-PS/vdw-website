@@ -151,7 +151,7 @@ footer {
 .hero-slideshow .swiper-container {
   width: 100%;
   height: 100%;
-    overflow: hodden;
+    overflow: hidden;
 }
 
 /* Slide-afbeeldingen altijd cover, nooit contain */
