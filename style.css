@@ -127,35 +127,39 @@ footer {
     flex-direction: column;
   }
  }
-/* Zorg dat de Swiper 100% van de header vult */
+/* ─── CONSTRAIN HERO SLIDER TO CONTAINER ──────────────── */
+
+/* Houd header full-width en donkerblauw */
+.hero-slideshow {
+  width: 100%;
+  background-color: #003366;
+  overflow: hidden;
+}
+
+/* Maak je container binnen de header exact hetzelfde als je page-container */
+.hero-slideshow > .container {
+  max-width: 1200px;   /* hetzelfde als .container elders */
+  margin: 0 auto;      /* centreer */
+  padding: 0;          /* geen extra padding */
+  position: relative;  /* voor overlay */
+}
+
+/* Laat Swiper 100% van die container vullen */
 .hero-slideshow .swiper-container {
   width: 100%;
-  height: 500px;
-  position: relative;
-  background: #003366;
+  height: 500px;       /* zelfde hoogte als je header-hoogte */
 }
-.hero-slideshow .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
+
+/* Overlay erboven */
 .hero-slideshow .header-text-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   padding: 2rem;
-  display: flex; flex-direction: column;
-  justify-content: flex-start; align-items: flex-start;
   z-index: 10;
   color: #fff;
 }
 
-/* Binnen .container: slider moet 100% daarvan zijn, niet van de hele viewport */
-.hero-slideshow .container > .swiper-container {
-  width: 100%;
-  height: 500px;  /* precies dezelfde hoogte als voorheen */
-}
 
 
 main.container {
