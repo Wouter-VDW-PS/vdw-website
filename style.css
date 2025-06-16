@@ -147,6 +147,33 @@ footer {
   height: 500px;
 }
 
+.slide img {
+  width: 100%;
+  height: auto;           /* laat de hoogte autonoom meeschalen */
+  max-height: 500px;      /* behoud je header-hoogte */
+  object-fit: contain;    /* toon de volledige afbeelding */
+  object-position: center;
+  display: block;
+  margin: auto;           /* centreert horizontaal */
+}
+
+/* ▶ Toon elke afbeelding volledig en gecentreerd */
+.slideshow-wrapper,
+.slides-track,
+.slide {
+  height: 500px !important;
+}
+
+.slide img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
 
 /* Animatie van links naar rechts */
 @keyframes slideHorizontaal {
@@ -207,12 +234,4 @@ main.container {
   text-decoration: underline;
 }
 
-.slide img {
-  width: 100%;
-  height: auto;           /* laat de hoogte autonoom meeschalen */
-  max-height: 500px;      /* behoud je header-hoogte */
-  object-fit: contain;    /* toon de volledige afbeelding */
-  object-position: center;
-  display: block;
-  margin: auto;           /* centreert horizontaal */
-}
+
