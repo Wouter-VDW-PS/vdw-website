@@ -25,23 +25,6 @@
     }
   </style>
 </head>
-
-  <script>
-  (function() {
-    const track = document.querySelector('.slides-track');
-    const slides = Array.from(track.children);
-    let index = 0;
-    const advance = () => {
-      index = (index + 1) % slides.length;
-      track.style.transform = `translateX(-${100 * index}%)`;
-    };
-    // start eerste slide
-    track.style.transform = 'translateX(0)';
-    // elke 5 seconden naar de volgende
-    setInterval(advance, 5000);
-  })();
-</script>
-
   
 <body>
 <header class="hero-slideshow">
@@ -70,9 +53,6 @@
     </nav>
   </div>
 </header>
-
-
-
 
 <main class="container">
   <h2>VDW Projects & Solutions</h2>
@@ -145,5 +125,21 @@
 
   </div>
 </footer>
+
+    <script>
+  (function() {
+    const track = document.querySelector('.slides-track');
+    const slides = Array.from(track.children);
+    let index = 0;
+    const advance = () => {
+      index = (index + 1) % slides.length;
+      track.style.transform = `translateX(-${100 * index}%)`;
+    };
+    // start eerste slide
+    track.style.transform = 'translateX(0)';
+    // elke 5 seconden naar de volgende
+    setInterval(advance, 5000);
+  })();
+</script>
 </body>
 </html>
