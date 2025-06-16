@@ -127,67 +127,88 @@ footer {
     flex-direction: column;
   }
 
-    /* ─── CSS ONLY SLIDER ───────────────────────────────── */
+   /* ─── SLIDESHOW IN HEADER ─────────────────────────────────── */
 
-.slideshow-wrapper {
+.hero-slideshow {
   position: relative;
   width: 100%;
   height: 500px;
   overflow: hidden;
 }
 
+.slideshow-wrapper {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
 .slides-track {
   display: flex;
-  width: calc(100% * 6); /* 6 slides */
-  animation: slideHorizontaal 36s infinite;
+  height: 100%;
+  animation: slideLeft 30s infinite linear;
 }
 
 .slide {
   flex: 0 0 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .slide img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: center;
   display: block;
-  margin: auto;
+  background: #003366; /* fallback kleur */
 }
 
-/* Iedere slide krijgt 6s zicht, 36s totaal voor 6 slides */
-@keyframes slideHorizontaal {
-  0%,   16.66%   { transform: translateX(0); }
-  16.66%, 33.33% { transform: translateX(-100%); }
-  33.33%, 50%    { transform: translateX(-200%); }
-  50%,   66.66%  { transform: translateX(-300%); }
-  66.66%, 83.33% { transform: translateX(-400%); }
-  83.33%, 100%   { transform: translateX(-500%); }
+/* Animatie: schuif slides van rechts naar links */
+@keyframes slideLeft {
+  0%    { transform: translateX(0); }
+  16.66%{ transform: translateX(0); }
+  20%   { transform: translateX(-100%); }
+  36.66%{ transform: translateX(-100%); }
+  40%   { transform: translateX(-200%); }
+  56.66%{ transform: translateX(-200%); }
+  60%   { transform: translateX(-300%); }
+  76.66%{ transform: translateX(-300%); }
+  80%   { transform: translateX(-400%); }
+  96.66%{ transform: translateX(-400%); }
+  100%  { transform: translateX(-500%); }
 }
 
-/* Zorg dat je content erboven blijft */
+/* Overlay-tekst boven de slides */
+.header-text-overlay {
+  position: relative; /* boven de absolutely positioned slides */
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.header-text-overlay h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header-text-overlay nav a {
+  color: #fff;
+  margin-right: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-text-overlay nav a:hover {
+  text-decoration: underline;
+}
+
+/* Zorg dat de content niet doorschijnt */
 main.container {
   position: relative;
   z-index: 2;
   background-color: #fff;
 }
-
-/* Overlay blijft onveranderd */
-.header-text-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  padding: 2rem;
-  display: flex; flex-direction: column;
-  justify-content: flex-start; align-items: flex-start;
-  background: rgba(0,0,0,0.4);
-  color: white;
-}
-.header-text-overlay h1 { margin:0; font-size:2rem; }
-.header-text-overlay nav a { color:#fff; margin-right:1rem; text-decoration:none; font-weight:bold; }
-.header-text-overlay nav a:hover { text-decoration:underline; }
 
 
