@@ -126,7 +126,7 @@ footer {
   .form-row {
     flex-direction: column;
   }
-
+ }
 /* ─── HERO SLIDESHOW ────────────────────────────────────── */
 .hero-slideshow {
   position: relative;
