@@ -150,6 +150,14 @@ footer {
   z-index: 10;
   color: #fff;
 }
+
+/* Binnen .container: slider moet 100% daarvan zijn, niet van de hele viewport */
+.hero-slideshow .container > .swiper-container {
+  width: 100%;
+  height: 500px;  /* precies dezelfde hoogte als voorheen */
+}
+
+
 main.container {
   position: relative;
   z-index: 1;
