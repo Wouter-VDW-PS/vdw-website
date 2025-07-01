@@ -1,13 +1,13 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f7f7f7;
-    color: #222;
+    background-color: #F1EDE2;
+    color: #2D2B27;
     margin: 0;
 }
 header {
-    background-color: #003366;
-    color: #fff;
+    background-color: #2D2B27;
+    color: #F1EDE2;
     padding: 1rem 0;
 }
 header h1 {
@@ -20,7 +20,7 @@ nav {
 }
 nav a {
     margin-right: 1rem;
-    color: #fff;
+    color: #F1EDE2;
     text-decoration: none;
     font-weight: bold;
 }
@@ -33,7 +33,7 @@ nav a:hover {
     padding: 1rem;
 }
 main {
-    background-color: #fff;
+    background-color: #B5AF9D;
     padding: 2rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -132,7 +132,7 @@ footer {
 /* parent header full-width, donkerblauw */
 .hero-slideshow {
   width: 100%;
-  background: #003366;
+  background: #2D2B27;
   overflow: hidden;
   padding: 0;
 }
@@ -174,7 +174,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 10;
-  color: #fff;
+  color: #F1EDE2;
 }
 
 /* main-content ligt er netjes onder */
