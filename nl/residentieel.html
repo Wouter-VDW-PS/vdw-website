@@ -2,144 +2,57 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Residentieel - VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
-  <style>
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .project-card {
-      flex: 1 1 calc(50% - 2rem);
-      background: #B5AF9D;
-      border-radius: 8px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-    .project-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .project-card .content {
-      padding: 1rem;
-    }
-    .project-card h4 {
-      margin-top: 0;
-    }
-    .project-card a {
-      display: inline-block;
-      margin-top: 1rem;
-      text-decoration: underline;
-      color: #fff;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css?v=20260316" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
-        <a href="/nl/index.html">Home</a>
-        <a href="/nl/industrieel.html">Industrieel</a>
-        <a href="/nl/residentieel.html">Residentieel</a>
-        <a href="/nl/over.html">Over</a>
-        <a href="/nl/contact.html">Contact</a>
-        <a href="/en/index.html">EN</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <h2 id="intro">Residentieel</h2>
-    <p><strong>Elektrische totaaloplossingen voor woningen en appartementen.</strong></p>
-    <p>
-      VDW Projects & Solutions helpt particulieren met het uitwerken en uitvoeren van residentiële installaties, aangepast aan hun verbruik, comfort en toekomstplannen.
-    </p>
-
-    <h3 id="diensten">Diensten</h3>
-    <ul>
-      <li>Volledige elektrische installaties (nieuwbouw/renovatie)</li>
-      <li>Traditionele bekabeling of domotica</li>
-      <li>Laadpalen met load balancing en PV-integratie</li>
-      <li>Thuisbatterijen en energiebeheer</li>
-      <li>Slimme oplossingen op maat van je verbruik</li>
-    </ul>
-
-    <h3 id="projecten">Projecten</h3>
-    <div class="project-card">
-  <div class="project-header">
-    <h4>Residentiële installatie – Laadpaal</h4>
-  </div>
-  <div class="project-content-bg" style="
-    background-image: url('/assets/Laadpaal.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    color: white;
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;">
-    <div class="overlay">
-      <p>Laadpaal met load balancing & domotica-integratie voor optimaal energiebeheer.</p>
-      <a href="/nl/projecten/laadpaal.html">Meer info →</a>
-    </div>
-  </div>
-</div>
-
-  </main>
-
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
-    </div>
-
-    <!-- Contactgegevens -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">BTW BE1015.830.223</p>
-    </div>
-
-    <!-- Juridische links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Juridisch</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacybeleid
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/nl/index.html">
+          <img src="/assets/logo.png" alt="VDW Projects &amp; Solutions logo" />
+          <span>VDW Projects &amp; Solutions</span>
         </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2C
-        </a>
-      </p>
-    </div>
-
+        <nav class="site-nav">
+          <a href="/nl/index.html">Home</a>
+          <a href="/nl/industrieel.html">Industrieel</a>
+          <a class="active" href="/nl/residentieel.html">Residentieel</a>
+          <a href="/nl/over.html">Over</a>
+          <a class="lang-link" href="/en/index.html">EN</a>
+        </nav>
+      </div>
+    </header>
+    <section class="page-hero"><div class="container"><div class="page-hero-card fade-in"><div><span class="eyebrow">Residentieel</span><h1>Residentiële installaties die veilig, conform en klaar voor later zijn.</h1><p>Van nieuwe installaties en renovaties tot laadoplossingen en conformiteitswerken. Altijd met aandacht voor een nette afwerking en een installatie die logisch opgebouwd is.</p></div><aside class="page-hero-aside"><ul><li>Volledige elektrische installaties</li><li>Laadpalen, thuisbatterijen en load balancing</li><li>Conform maken voor verkoop of bewoning</li></ul></aside></div></div></section>
+    <main><section class="section"><div class="container"><div class="dual-layout"><article class="list-card fade-in"><h3>Diensten</h3><ul class="bullet-list"><li>Volledige elektrische installaties voor nieuwbouw en renovatie</li><li>Klassieke installaties of domotica</li><li>Laadpalen met load balancing en PV-integratie</li><li>Thuisbatterijen en energiebeheer</li><li>Advies op maat van verbruik, comfort en toekomstplannen</li></ul></article><article class="list-card fade-in delay-1"><h3>Focus</h3><p>Residentiële projecten moeten niet alleen mooi uitgevoerd zijn, maar ook logisch, veilig en conform. Daarom ligt de nadruk op duidelijk advies, correcte dimensionering en een nette oplevering.</p></article></div><div class="section-head" style="margin-top:34px;"><div><h2>Projecten</h2><p>De bestaande laadpaalreferentie blijft behouden en wordt aangevuld met twee nieuwe residentiële types projecten.</p></div></div><div class="project-grid"><article class="project-card fade-in"><div class="project-image"><img src="/assets/Laadpaal.jpg" alt="Laadpaal residentieel project" /></div><div class="project-content"><div class="project-meta"><span>Residentieel</span><span>Smart charging</span></div><h3>Laadpaal met slimme sturing</h3><p>Installatie van een laadoplossing met load balancing en integratie in de woning, afgestemd op verbruik en beschikbare capaciteit.</p><a class="project-link" href="/nl/projecten/laadpaal.html">Meer info →</a></div></article><article class="project-card fade-in delay-1"><div class="project-image"><img src="/assets/buitenpost.jpg" alt="Elektrische installatie conform maken voor verkoop" /></div><div class="project-content"><div class="project-meta"><span>Conformiteit</span><span>Verkoop</span></div><h3>Elektrische installatie conform maken voor keuring en verkoop</h3><p>Aanpassingen aan bestaande elektrische installaties om een geldig keuringsattest te bekomen in functie van de verkoop van een woning.</p><span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span></div></article><article class="project-card fade-in delay-2"><div class="project-image"><img src="/assets/Slide6.jpg" alt="Elektrische installatie conform maken na aankoop" /></div><div class="project-content"><div class="project-meta"><span>Renovatie</span><span>Bewoning</span></div><h3>Elektrische installatie conform maken na aankoop voor bewoning</h3><p>Renovatie en rechtzetting van een elektrische installatie na aankoop van een woning, zodat de installatie veilig en conform is voor dagelijks gebruik en verdere verbouwing.</p><span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span></div></article></div></div></section></main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-card">
+          <div class="footer-grid">
+            <div>
+              <img src="/assets/logo.png" alt="VDW Projects &amp; Solutions logo" />
+              <p>Engineering, project management en pragmatische ondersteuning voor industriële en residentiële elektrische projecten.</p>
+            </div>
+            <div>
+              <p><strong>VDW Projects & Solutions</strong></p>
+              <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+              <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+              <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+              <p>BTW BE1015.830.223</p>
+            </div>
+            <div>
+              <p><strong>Juridisch</strong></p>
+              <ul>
+                <li><a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+                <li><a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+                <li><a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">© 2026 VDW Projects &amp; Solutions. Alle rechten voorbehouden.</div>
+        </div>
+      </div>
+    </footer>
   </div>
-
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. Alle rechten voorbehouden.
-  </div>
-</footer>
-
 </body>
 </html>
