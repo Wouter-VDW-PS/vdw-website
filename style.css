@@ -552,3 +552,20 @@ a {
     text-align: left;
   }
 }
+
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.project-card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+  border-color: rgba(232, 141, 57, 0.28);
+}
+
+.project-card-link:hover h3 {
+  color: var(--color-accent);
+}
