@@ -345,7 +345,19 @@ a {
   color: rgba(255, 255, 255, 0.88);
   font-size: 1.04rem;
 }
+.home-page .remou-inner {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+}
 
+.home-page .remou-logo {
+  display: block;
+  margin: 0 auto 18px auto;
+  height: 65px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
 /* Generic cards / project support */
 .project-grid {
   display: block;
