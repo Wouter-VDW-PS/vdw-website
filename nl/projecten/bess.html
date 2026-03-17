@@ -1,109 +1,347 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PV + BESS Integratie - VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultant netkoppeling – PV &amp; BESS | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Projectpagina over de technische begeleiding en netkoppeling van een PV-installatie en BESS op een 10 kV-distributienet, inclusief EMS-communicatie, netsturing en PQ-regeling.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .project-hero {
+      padding: 88px 0 40px;
+    }
+
+    .project-hero .container {
+      max-width: 980px;
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .project-hero-intro {
+      max-width: 780px;
+      margin: 0;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .project-main {
+      padding: 10px 0 88px;
+    }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .project-content-card,
+    .project-side-card,
+    .project-image-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-content-card,
+    .project-side-card {
+      padding: 30px;
+    }
+
+    .project-content-card h2,
+    .project-side-card h3 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .project-content-card p,
+    .project-side-card p,
+    .project-content-card li {
+      color: rgba(45, 43, 39, 0.84);
+      line-height: 1.75;
+    }
+
+    .project-content-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-content-card ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+    }
+
+    .project-content-card li + li {
+      margin-top: 8px;
+    }
+
+    .project-meta-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .project-meta-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--color-dark);
+    }
+
+    .project-image-card {
+      overflow: hidden;
+    }
+
+    .project-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-status {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232, 141, 57, 0.12);
+      color: var(--color-accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .project-section + .project-section {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 980px) {
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .project-hero {
+        padding: 64px 0 28px;
+      }
+
+      .project-main {
+        padding: 10px 0 64px;
+      }
+
+      .project-content-card,
+      .project-side-card {
+        padding: 22px;
+      }
+
+      .project-actions .button,
+      .project-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/nl/index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
         <a href="/nl/index.html">Home</a>
-        <a href="/nl/industrieel.html">Industrieel</a>
-        <a href="/nl/residentieel.html">Residentieel</a>
         <a href="/nl/over.html">Over</a>
-        <a href="/nl/contact.html">Contact</a>
-        <a href="/en/index.html">EN</a>
+        <a href="/nl/industrieel.html" class="active">Industrieel</a>
+        <a href="/nl/residentieel.html">Residentieel</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <div style="
-      background-image: url('/assets/Veolia_Genk.jpeg');
-      background-size: cover;
-      background-position: center;
-      height: 250px;
-      border-radius: 8px;
-      margin-bottom: 2rem;">
-    </div>
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-label">Industrieel project</p>
+        <h1>Consultant netkoppeling – PV &amp; BESS</h1>
+        <p class="project-hero-intro">
+          Technische begeleiding en advies voor de koppeling van een PV-installatie en
+          batterij-energiesysteem op het 10 kV-distributienet, inclusief netsturing,
+          communicatie-architectuur en afstemming tussen alle betrokken partijen.
+        </p>
+      </div>
+    </section>
 
-    <h2>Consultant Grid Connection – Afvalverwerking (2024–heden)</h2>
+    <section class="project-main">
+      <div class="container">
+        <div class="project-layout">
 
-    <p><strong>Sector:</strong> Afvalverwerking<br>
-    <strong>Rol:</strong> Technisch consultant netaansluiting PV & BESS</p>
+          <div>
+            <article class="project-content-card project-section">
+              <h2>Projectomschrijving</h2>
 
-    <p>
-      Begeleiding en technisch advies voor de aansluiting van een zonne-installatie en een batterij-energiesysteem (BESS) op een 10kV-distributienet van Fluvius.
-    </p>
+              <p>
+                Voor dit project werd technische ondersteuning verleend bij de netkoppeling
+                van een zonne-installatie en een batterij-energiesysteem (BESS) op het
+                10 kV-distributienet van Fluvius. De opdracht omvatte zowel de technische
+                voorbereiding als de afstemming van de verschillende interfaces tussen
+                netbeheerder, EMS, batterijsturing en de operationele gebruikers van de site.
+              </p>
 
-    <h3>⚡ Fase 1 – PV-installatie</h3>
-    <ul>
-      <li>Sturing en communicatie tussen de PV-installatie en Fluvius via een Phoenix Contact EMS</li>
-      <li>Doel: opwekvermogen regelen volgens setpoints van de netbeheerder, inclusief dynamische ontkoppeling</li>
-      <li>Programmatie uitgevoerd door Coretecs</li>
-    </ul>
+              <p>
+                In een eerste fase lag de focus op de PV-installatie. Daarbij werd de sturing
+                en communicatie tussen de installatie en Fluvius opgezet via een Phoenix Contact
+                EMS-oplossing. Het doel was om het opwekvermogen correct te regelen volgens
+                de setpoints van de netbeheerder, inclusief de vereiste logica rond dynamische
+                ontkoppeling en netbeperkingen.
+              </p>
 
-    <h3>🔋 Fase 2 – BESS (lopend)</h3>
-    <ul>
-      <li>Advies bij koppeling van een 1 MW batterij-opslaginstallatie op het 10kV-net</li>
-      <li>Uitwerking van de hardware: HS-cellen, bekabeling, vermogensberekeningen en ontkoppelingslogica</li>
-      <li>Communicatie tussen Fluvius en EMS voor sturing (ontkoppeling + weigering) gebeurt opnieuw via Phoenix Contact (programmatie door Coretecs)</li>
-    </ul>
+              <p>
+                In een volgende fase werd de koppeling van het BESS verder uitgewerkt.
+                Daarbij werd advies gegeven over de hardware-opbouw, de hoogspanningscellen,
+                de bekabeling, vermogensberekeningen en de ontkoppelingsfilosofie. De technische
+                uitdaging zat niet alleen in de fysieke aansluiting op het net, maar ook in de
+                juiste communicatie tussen alle systemen en stakeholders die deel uitmaken van
+                de totale energiesturing.
+              </p>
 
-    <p><a href="/nl/industrieel.html">&larr; Terug naar industriële projecten</a></p>
+              <p>
+                Ondertussen is de BESS effectief operationeel. Dankzij Nick Remouchamps en
+                Coretecs werd de communicatie tussen alle betrokken partijen succesvol opgezet
+                via de Phoenix MINT controller. Concreet werd de brug gemaakt tussen het
+                Agregio BMS, de Fluvius telecontrolekast, Flexcity en de dashboarding van Veolia.
+                Op die manier werd een stabiele en bruikbare communicatiestructuur gerealiseerd
+                die noodzakelijk is voor correcte sturing, monitoring en interactie met het net.
+              </p>
+
+              <p>
+                Daarnaast hebben zij ook de volledige PQ-regeling voor de site en het BESS
+                uitgewerkt. Daarmee werd niet alleen de koppeling technisch afgerond, maar ook
+                de vermogenskwaliteit en het regelgedrag van de installatie op een degelijke
+                manier geïntegreerd in de bredere elektrische infrastructuur van de site.
+              </p>
+            </article>
+
+            <article class="project-content-card project-section">
+              <h2>Uitgevoerde scope</h2>
+              <ul>
+                <li>Technische begeleiding bij de koppeling van PV en BESS op het 10 kV-net van Fluvius</li>
+                <li>Advies rond EMS-architectuur, netsturing en ontkoppelingslogica</li>
+                <li>Ondersteuning bij hardwarekeuzes voor HS-cellen, bekabeling en vermogensberekeningen</li>
+                <li>Afstemming van communicatie tussen netbeheerder, EMS, BMS en energiesturing</li>
+                <li>Integratie via Phoenix MINT controller</li>
+                <li>Communicatieopzet tussen Agregio BMS, Fluvius telecontrolekast, Flexcity en Veolia dashboarding</li>
+                <li>Uitwerking van de volledige PQ-regeling voor site en BESS</li>
+                <li>Ondersteuning bij de overgang van ontwerp en koppeling naar operationele werking</li>
+              </ul>
+            </article>
+
+            <div class="project-actions">
+              <a class="button button-secondary" href="/nl/industrieel.html">Terug naar industrieel</a>
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
+            </div>
+          </div>
+
+          <div>
+            <aside class="project-side-card project-section">
+              <h3>Projectinfo</h3>
+
+              <div class="project-meta-list">
+                <div class="project-meta-item">
+                  <strong>Sector</strong>
+                  Energie / afvalverwerking
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Rol</strong>
+                  Consultant netkoppeling PV &amp; BESS
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Disciplines</strong>
+                  10 kV netkoppeling, EMS, BESS, communicatie, PQ-regeling
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Technische partners</strong>
+                  Coretecs, Nick Remouchamps, Fluvius, Agregio, Flexcity, Veolia
+                </div>
+              </div>
+
+              <div class="project-status">BESS operationeel</div>
+            </aside>
+
+            <div class="project-image-card project-section">
+              <img src="../../assets/Veolia_Genk.jpeg" alt="PV en BESS project">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>BTW BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Juridisch</strong></p>
+            <ul>
+              <li><a href="../../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
+        </div>
+      </div>
     </div>
-
-    <!-- Contactgegevens -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">BTW BE1015.830.223</p>
-    </div>
-
-    <!-- Juridische links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Juridisch</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacybeleid
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2C
-        </a>
-      </p>
-    </div>
-
-  </div>
-
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. Alle rechten voorbehouden.
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
