@@ -114,11 +114,25 @@
     }
 
     .project-card-custom {
+      display: block;
       background: var(--color-card);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-subtle);
+      text-decoration: none;
+      color: inherit;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .project-card-custom:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-soft);
+      border-color: rgba(232, 141, 57, 0.28);
+    }
+
+    .project-card-custom:hover h3 {
+      color: var(--color-accent);
     }
 
     .project-card-custom img {
@@ -153,6 +167,7 @@
       margin: 0 0 12px;
       line-height: 1.2;
       font-size: 1.2rem;
+      transition: color var(--transition);
     }
 
     .project-card-body p {
@@ -166,17 +181,6 @@
       color: var(--color-accent);
       text-decoration: none;
       font-weight: 600;
-    }
-
-    .project-link:hover {
-      text-decoration: underline;
-    }
-
-    .project-placeholder {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 0.94rem;
-      color: rgba(45, 43, 39, 0.6);
     }
 
     .about-actions {
@@ -302,7 +306,7 @@
         </div>
 
         <div class="project-grid-custom">
-          <article class="project-card-custom">
+          <a class="project-card-custom" href="/nl/projecten/foodindustrie.html">
             <img src="../assets/Tiense_Suikerraffinaderij.jpg" alt="Voedingsindustrie project">
             <div class="project-card-body">
               <div class="project-meta">
@@ -314,11 +318,11 @@
                 Voorstudie en voorbereiding van HS-, LS- en no-break netwerken,
                 inclusief glasvezelvoorbereiding en offertevergelijking voor kritische infrastructuur.
               </p>
-              <a class="project-link" href="/nl/projecten/foodindustrie.html">Meer info →</a>
+              <span class="project-link">Meer info →</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card-custom">
+          <a class="project-card-custom" href="/nl/projecten/bess.html">
             <img src="../assets/Veolia_Genk.jpeg" alt="PV en BESS project">
             <div class="project-card-body">
               <div class="project-meta">
@@ -330,11 +334,11 @@
                 Advies en begeleiding bij de koppeling van een PV-installatie en BESS
                 op het 10 kV-distributienet van Fluvius, inclusief technische afstemming en voorbereiding.
               </p>
-              <a class="project-link" href="/nl/projecten/bess.html">Meer info →</a>
+              <span class="project-link">Meer info →</span>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card-custom">
+          <a class="project-card-custom" href="/nl/projecten/luchthaven-ms-backbone.html">
             <img src="../assets/Slide4.jpg" alt="Middenspanningsproject luchthaven">
             <div class="project-card-body">
               <div class="project-meta">
@@ -351,47 +355,47 @@
                 De nieuwe 10 kV-ruggengraat dient ter voorbereiding van de vermogensverhoging
                 van de luchthaven en de verdere elektrificatie van de infrastructuur.
               </p>
-              <span class="project-placeholder">Inhoud kan later nog verder aangevuld worden</span>
+              <span class="project-link">Meer info →</span>
             </div>
-          </article>
+          </a>
         </div>
 
       </div>
     </section>
   </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-card">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>BTW BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Juridisch</strong></p>
+            <ul>
+              <li><a href="../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-contact">
-          <p><strong>VDW Projects &amp; Solutions</strong></p>
-          <p>Achturenstraat 5, 3010 Kessel-Lo</p>
-          <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
-          <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
-          <p>BTW BE1015.830.223</p>
+        <div class="footer-bottom">
+          © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
         </div>
-
-        <div class="footer-legal">
-          <p><strong>Juridisch</strong></p>
-          <ul>
-            <li><a href="../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
-            <li><a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
-            <li><a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
