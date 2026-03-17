@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS backbone revamp – luchthaven | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Projectpagina over de revamp van de middenspanningsruggengraat op de luchthaven van Zaventem, inclusief verzwaring van het 11 kV-net, nieuwe MS-cabines, MS-cellen en nieuwe kabeltracés.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .project-hero {
+      padding: 88px 0 40px;
+    }
+
+    .project-hero .container {
+      max-width: 980px;
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .project-hero-intro {
+      max-width: 780px;
+      margin: 0;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .project-main {
+      padding: 10px 0 88px;
+    }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .project-content-card,
+    .project-side-card,
+    .project-image-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-content-card,
+    .project-side-card {
+      padding: 30px;
+    }
+
+    .project-content-card h2,
+    .project-side-card h3 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .project-content-card p,
+    .project-side-card p,
+    .project-content-card li {
+      color: rgba(45, 43, 39, 0.84);
+      line-height: 1.75;
+    }
+
+    .project-content-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-content-card ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+    }
+
+    .project-content-card li + li {
+      margin-top: 8px;
+    }
+
+    .project-meta-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .project-meta-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--color-dark);
+    }
+
+    .project-image-card {
+      overflow: hidden;
+    }
+
+    .project-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-status {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232, 141, 57, 0.12);
+      color: var(--color-accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .project-section + .project-section {
+      margin-top: 28px;
+    }
+
+    .photo-credit {
+      margin-top: 14px;
+      font-size: 0.86rem;
+      line-height: 1.6;
+      color: rgba(45, 43, 39, 0.65);
+    }
+
+    .photo-credit a {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 980px) {
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .project-hero {
+        padding: 64px 0 28px;
+      }
+
+      .project-main {
+        padding: 10px 0 64px;
+      }
+
+      .project-content-card,
+      .project-side-card {
+        padding: 22px;
+      }
+
+      .project-actions .button,
+      .project-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/nl/index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="/nl/index.html">Home</a>
+        <a href="/nl/over.html">Over</a>
+        <a href="/nl/industrieel.html" class="active">Industrieel</a>
+        <a href="/nl/residentieel.html">Residentieel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-label">Industrieel project</p>
+        <h1>MS backbone revamp – luchthaven</h1>
+        <p class="project-hero-intro">
+          Werkvoorbereiding en projectopvolging voor de vernieuwing en verzwaring van
+          de middenspanningsruggengraat op de luchthaven van Zaventem, met focus op
+          nieuwe cabines, nieuwe cellen, nieuwe kabeltracés en de verdere elektrificatie
+          van de infrastructuur.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-main">
+      <div class="container">
+        <div class="project-layout">
+
+          <div>
+            <article class="project-content-card project-section">
+              <h2>Projectomschrijving</h2>
+
+              <p>
+                Voor Imtech Belgium ben ik als werkvoorbereider en project manager actief
+                binnen het middenspanningsproject <strong>“Stragrid”</strong> op de luchthaven
+                van Zaventem. Binnen dit project werkt Imtech, als onderdeel van de Cordeel Groep,
+                samen met Mobix in onderaanneming aan de realisatie van een belangrijke vernieuwing
+                van de bestaande middenspanningsinfrastructuur.
+              </p>
+
+              <p>
+                Het project heeft als doel het bestaande <strong>11 kV-middenspanningsnet</strong>
+                te verzwaren en toekomstklaar te maken. Daarbij worden nieuwe middenspanningscabines
+                en nieuwe MS-cellen geplaatst, en worden verouderde papier-loodkabels systematisch
+                vervangen door nieuwe kabelverbindingen die beter aansluiten bij de huidige en
+                toekomstige vermogensbehoefte van de luchthaven.
+              </p>
+
+              <p>
+                Naast de vernieuwing van de installaties omvat het project ook de aanleg van
+                volledig nieuwe kabeltrajecten. Deze worden gerealiseerd via klassieke sleufwerken,
+                maar ook via gestuurde boringen op locaties waar een open ontgraving minder wenselijk
+                of technisch minder haalbaar is. Op die manier wordt het nieuwe net geïntegreerd
+                in een complexe en operationele luchthavenomgeving waar continuïteit en betrouwbaarheid
+                essentieel zijn.
+              </p>
+
+              <p>
+                De opdracht draait dus niet enkel om het vervangen van bestaande componenten,
+                maar om het stap voor stap uitbouwen van een robuustere middenspanningsruggengraat
+                die de verdere groei, vermogensverhoging en elektrificatie van de luchthaven moet
+                ondersteunen. Binnen die context ligt de focus op een degelijke voorbereiding,
+                duidelijke coördinatie tussen de betrokken partijen en technische keuzes die ook
+                praktisch uitvoerbaar blijven tijdens realisatie.
+              </p>
+            </article>
+
+            <article class="project-content-card project-section">
+              <h2>Uitgevoerde en voorbereide scope</h2>
+              <ul>
+                <li>Werkvoorbereiding en projectmanagement voor het MS backbone-project “Stragrid”</li>
+                <li>Ondersteuning bij de verzwaring van het bestaande 11 kV-middenspanningsnet</li>
+                <li>Voorbereiding en coördinatie voor nieuwe MS-cabines en nieuwe MS-cellen</li>
+                <li>Vervanging van bestaande papier-loodkabels door nieuwe middenspanningskabels</li>
+                <li>Uitwerking van nieuwe kabeltracés binnen een operationele luchthavenomgeving</li>
+                <li>Afstemming van uitvoeringsmethodes via sleuven en gestuurde boringen</li>
+                <li>Technische opvolging van keuzes in functie van betrouwbaarheid, uitbreiding en elektrificatie</li>
+                <li>Coördinatie tussen verschillende betrokken aannemers en partners binnen het project</li>
+              </ul>
+            </article>
+
+            <div class="project-actions">
+              <a class="button button-secondary" href="/nl/industrieel.html">Terug naar industrieel</a>
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
+            </div>
+          </div>
+
+          <div>
+            <aside class="project-side-card project-section">
+              <h3>Projectinfo</h3>
+
+              <div class="project-meta-list">
+                <div class="project-meta-item">
+                  <strong>Sector</strong>
+                  Luchthaveninfrastructuur
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Rol</strong>
+                  Werkvoorbereider en Project Manager
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Project</strong>
+                  Stragrid
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Technische scope</strong>
+                  11 kV middenspanning, cabines, cellen, kabelvernieuwing en nieuwe tracés
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Partners</strong>
+                  Imtech Belgium, Cordeel Groep en Mobix
+                </div>
+              </div>
+
+              <div class="project-status">MS backbone in vernieuwing</div>
+            </aside>
+
+            <div class="project-image-card project-section">
+              <img src="../../assets/luchthaven.jpg" alt="Luchthavenproject">
+            </div>
+
+            <div class="photo-credit">
+              Foto credits: Konstantin von Wedelstaedt –
+              <a href="http://www.airliners.net/photo//1788412/L" target="_blank" rel="noopener">Gallery page</a>
+              |
+              <a href="http://cdn-www.airliners.net/aviation-photos/photos/2/1/4/1788412.jpg" target="_blank" rel="noopener">Photo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>BTW BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Juridisch</strong></p>
+            <ul>
+              <li><a href="../../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
