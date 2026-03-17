@@ -1,42 +1,346 @@
-<div class="content-grid">
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over - VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Meer over VDW Projects & Solutions, de aanpak van Wouter Van De Wiele en de expertise in industriële en residentiële elektrische projecten.">
 
-  <div class="content-card">
-    <h2>Een pragmatische aanpak voor elektrische projecten</h2>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <p>
-      VDW Projects & Solutions werd opgericht door Wouter Van De Wiele en ondersteunt
-      zowel industriële als residentiële elektrische projecten. De focus ligt op een
-      combinatie van technische expertise, duidelijke structuur en een aanpak die ook
-      in de praktijk werkt.
-    </p>
+  <link rel="icon" type="image/png" href="../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../assets/symbool.png">
 
-    <p>
-      In industriële omgevingen gaat het vaak om elektrische infrastructuur,
-      middenspanning, energiedistributie en de voorbereiding en opvolging van
-      complexe projecten. De rol bestaat daarbij uit engineering, werkvoorbereiding,
-      technische coördinatie en ondersteuning tijdens uitvoering.
-    </p>
+  <link rel="stylesheet" href="/style.css?v=20260316">
 
-    <p>
-      In residentiële projecten ligt de nadruk eerder op veilige, conforme en
-      toekomstgerichte installaties zoals laadpalen, renovaties en energiebeheer.
-      Daarbij staat een nette uitvoering en duidelijke communicatie met de klant centraal.
-    </p>
+  <style>
+    .subpage-hero {
+      padding: 88px 0 36px;
+    }
 
-    <p>
-      Door technische kennis te combineren met projectmatige opvolging ontstaat een
-      aanpak die niet alleen correct op papier staat, maar ook werkbaar is op de werf
-      en in uitvoering.
-    </p>
+    .subpage-hero .container {
+      max-width: 980px;
+    }
 
-    <div class="about-actions">
-      <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
-      <a class="button button-secondary" href="industrieel.html">Bekijk projecten</a>
+    .subpage-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .subpage-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .subpage-hero p {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .content-section {
+      padding: 20px 0 88px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .content-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 38px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .content-card h2 {
+      margin: 0 0 22px;
+      line-height: 1.1;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      letter-spacing: -0.02em;
+    }
+
+    .content-card p {
+      margin: 0 0 22px;
+      color: rgba(45, 43, 39, 0.84);
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .content-card p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .about-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .about-photo-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .about-photo-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .about-photo-caption {
+      padding: 20px 22px 22px;
+      border-top: 1px solid var(--color-border);
+      background: rgba(255, 255, 255, 0.55);
+    }
+
+    .about-photo-caption h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.2;
+    }
+
+    .about-photo-caption p {
+      margin: 0;
+      color: rgba(45, 43, 39, 0.76);
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .approach-item {
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .approach-item h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.2;
+    }
+
+    .approach-item p {
+      margin: 0;
+      color: rgba(45, 43, 39, 0.8);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1024px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-photo-card img {
+        min-height: 420px;
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .subpage-hero {
+        padding: 64px 0 28px;
+      }
+
+      .content-section {
+        padding: 18px 0 64px;
+      }
+
+      .content-card {
+        padding: 24px;
+      }
+
+      .content-card p {
+        font-size: 0.98rem;
+      }
+
+      .about-photo-card img {
+        min-height: 320px;
+      }
+
+      .about-actions .button,
+      .about-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="over.html" class="active">Over</a>
+        <a href="industrieel.html">Industrieel</a>
+        <a href="residentieel.html">Residentieel</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="about-photo">
-    <img src="../assets/wouter.jpg" alt="Wouter Van De Wiele">
-  </div>
+  <main>
+    <section class="subpage-hero">
+      <div class="container">
+        <p class="subpage-label">Over</p>
+        <h1>Technisch sterk, praktisch in uitvoering.</h1>
+        <p>
+          VDW Projects &amp; Solutions ondersteunt elektrische projecten met een combinatie van
+          technische kennis, werkvoorbereiding en projectmatige opvolging. Altijd met focus op
+          haalbare oplossingen, duidelijke communicatie en een uitvoering die klopt.
+        </p>
+      </div>
+    </section>
 
-</div>
+    <section class="content-section">
+      <div class="container">
+
+        <div class="content-grid">
+          <article class="content-card">
+            <h2>Een pragmatische aanpak voor elektrische projecten</h2>
+
+            <p>
+              VDW Projects &amp; Solutions werd opgericht door Wouter Van De Wiele en ondersteunt
+              zowel industriële als residentiële elektrische projecten. De focus ligt op een sterke
+              combinatie van technische expertise, duidelijke structuur en een aanpak die ook in de
+              praktijk werkbaar blijft.
+            </p>
+
+            <p>
+              In industriële omgevingen gaat het vaak om elektrische infrastructuur, middenspanning,
+              energiedistributie en de voorbereiding en opvolging van complexe projecten. Daarbij ligt
+              de nadruk op engineering, werkvoorbereiding, technische coördinatie en ondersteuning
+              tijdens uitvoering.
+            </p>
+
+            <p>
+              In residentiële projecten verschuift de focus naar veilige, conforme en toekomstgerichte
+              installaties zoals laadpalen, renovaties en energiebeheer. Ook daar blijft een nette
+              uitvoering, logisch ontwerp en duidelijke communicatie centraal staan.
+            </p>
+
+            <p>
+              Door technische kennis te combineren met projectmatige opvolging ontstaat een aanpak
+              die niet alleen correct is op papier, maar ook werkt op de werf en in uitvoering.
+            </p>
+
+            <div class="about-actions">
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
+              <a class="button button-secondary" href="industrieel.html">Bekijk projecten</a>
+            </div>
+          </article>
+
+          <aside class="about-photo-card">
+            <img src="../assets/wouter.jpg" alt="Wouter Van De Wiele">
+            <div class="about-photo-caption">
+              <h3>Wouter Van De Wiele</h3>
+              <p>
+                Engineering, werkvoorbereiding en projectopvolging voor industriële en residentiële
+                elektrische projecten.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="approach-grid">
+          <div class="approach-item">
+            <h3>Engineering</h3>
+            <p>
+              Technische uitwerking van elektrische installaties en infrastructuur met aandacht
+              voor haalbaarheid, veiligheid en praktische uitvoering.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h3>Werkvoorbereiding</h3>
+            <p>
+              Structuur brengen in scope, planning, materiaal en aannemers zodat projecten
+              helder voorbereid en efficiënt opgevolgd kunnen worden.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h3>Projectopvolging</h3>
+            <p>
+              Coördinatie van technische dossiers en uitvoering met focus op voortgang,
+              kwaliteit en een duidelijke communicatie tussen alle betrokken partijen.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>BTW BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Juridisch</strong></p>
+            <ul>
+              <li><a href="../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
