@@ -1,62 +1,372 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Residentieel - VDW Projects & Solutions</title>
+  <meta name="description" content="Residentiële elektrische installaties, laadpalen, thuisbatterijen en conformiteitswerken voor woningen.">
 
-<link rel="icon" type="image/png" href="assets/symbool.png">
-<link rel="apple-touch-icon" href="assets/symbool.png">
-  
-  <link rel="stylesheet" href="/style.css?v=20260316" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .subpage-hero {
+      padding: 88px 0 48px;
+    }
+
+    .subpage-hero .container {
+      max-width: 980px;
+    }
+
+    .subpage-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .subpage-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .subpage-hero p {
+      margin: 0;
+      max-width: 800px;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .content-section {
+      padding: 32px 0 88px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+
+    .content-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .content-card h2,
+    .content-card h3 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .content-card p:last-child,
+    .content-card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-card p,
+    .content-card li {
+      color: rgba(45, 43, 39, 0.82);
+    }
+
+    .bullet-list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .bullet-list li + li {
+      margin-top: 10px;
+    }
+
+    .section-title-block {
+      margin: 0 0 26px;
+      max-width: 760px;
+    }
+
+    .section-title-block h2 {
+      margin: 0 0 10px;
+      line-height: 1.1;
+    }
+
+    .section-title-block p {
+      margin: 0;
+      color: rgba(45, 43, 39, 0.82);
+    }
+
+    .project-grid-custom {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .project-card-custom {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-card-custom img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-card-body {
+      padding: 24px;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .project-meta span {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(232, 141, 57, 0.12);
+      color: var(--color-accent);
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .project-card-body h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-size: 1.2rem;
+    }
+
+    .project-card-body p {
+      margin: 0 0 12px;
+      color: rgba(45, 43, 39, 0.82);
+    }
+
+    .project-link {
+      display: inline-flex;
+      margin-top: 6px;
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .project-placeholder {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.94rem;
+      color: rgba(45, 43, 39, 0.6);
+    }
+
+    .about-actions {
+      margin-top: 24px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1100px) {
+      .project-grid-custom {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .project-grid-custom {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .subpage-hero {
+        padding: 64px 0 34px;
+      }
+
+      .content-section {
+        padding: 24px 0 64px;
+      }
+
+      .content-card,
+      .project-card-body {
+        padding: 22px;
+      }
+
+      .project-card-custom img {
+        height: 200px;
+      }
+
+      .about-actions .button,
+      .about-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="container nav-row">
-        <a class="brand" href="/nl/index.html">
-          <img src="/assets/logo.png" alt="VDW Projects &amp; Solutions logo" />
-          <span>VDW Projects &amp; Solutions</span>
-        </a>
-        <nav class="site-nav">
-          <a href="/nl/index.html">Home</a>
-          <a href="/nl/industrieel.html">Industrieel</a>
-          <a class="active" href="/nl/residentieel.html">Residentieel</a>
-          <a href="/nl/over.html">Over</a>
-          <a class="lang-link" href="/en/index.html">EN</a>
-        </nav>
-      </div>
-    </header>
-    <section class="page-hero"><div class="container"><div class="page-hero-card fade-in"><div><span class="eyebrow">Residentieel</span><h1>Residentiële installaties die veilig, conform en klaar voor later zijn.</h1><p>Van nieuwe installaties en renovaties tot laadoplossingen en conformiteitswerken. Altijd met aandacht voor een nette afwerking en een installatie die logisch opgebouwd is.</p></div><aside class="page-hero-aside"><ul><li>Volledige elektrische installaties</li><li>Laadpalen, thuisbatterijen en load balancing</li><li>Conform maken voor verkoop of bewoning</li></ul></aside></div></div></section>
-    <main><section class="section"><div class="container"><div class="dual-layout"><article class="list-card fade-in"><h3>Diensten</h3><ul class="bullet-list"><li>Volledige elektrische installaties voor nieuwbouw en renovatie</li><li>Klassieke installaties of domotica</li><li>Laadpalen met load balancing en PV-integratie</li><li>Thuisbatterijen en energiebeheer</li><li>Advies op maat van verbruik, comfort en toekomstplannen</li></ul></article><article class="list-card fade-in delay-1"><h3>Focus</h3><p>Residentiële projecten moeten niet alleen mooi uitgevoerd zijn, maar ook logisch, veilig en conform. Daarom ligt de nadruk op duidelijk advies, correcte dimensionering en een nette oplevering.</p></article></div><div class="section-head" style="margin-top:34px;"><div><h2>Projecten</h2><p>De bestaande laadpaalreferentie blijft behouden en wordt aangevuld met twee nieuwe residentiële types projecten.</p></div></div><div class="project-grid"><article class="project-card fade-in"><div class="project-image"><img src="/assets/Laadpaal.jpg" alt="Laadpaal residentieel project" /></div><div class="project-content"><div class="project-meta"><span>Residentieel</span><span>Smart charging</span></div><h3>Laadpaal met slimme sturing</h3><p>Installatie van een laadoplossing met load balancing en integratie in de woning, afgestemd op verbruik en beschikbare capaciteit.</p><a class="project-link" href="/nl/projecten/laadpaal.html">Meer info →</a></div></article><article class="project-card fade-in delay-1"><div class="project-image"><img src="/assets/buitenpost.jpg" alt="Elektrische installatie conform maken voor verkoop" /></div><div class="project-content"><div class="project-meta"><span>Conformiteit</span><span>Verkoop</span></div><h3>Elektrische installatie conform maken voor keuring en verkoop</h3><p>Aanpassingen aan bestaande elektrische installaties om een geldig keuringsattest te bekomen in functie van de verkoop van een woning.</p><span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span></div></article><article class="project-card fade-in delay-2"><div class="project-image"><img src="/assets/Slide6.jpg" alt="Elektrische installatie conform maken na aankoop" /></div><div class="project-content"><div class="project-meta"><span>Renovatie</span><span>Bewoning</span></div><h3>Elektrische installatie conform maken na aankoop voor bewoning</h3><p>Renovatie en rechtzetting van een elektrische installatie na aankoop van een woning, zodat de installatie veilig en conform is voor dagelijks gebruik en verdere verbouwing.</p><span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span></div></article></div></div></section></main>
-    <footer class="site-footer">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="VDW Projects & Solutions home">
+        <img src="../assets/logo.png" alt="VDW Projects & Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="over.html">Over</a>
+        <a href="industrieel.html">Industrieel</a>
+        <a href="residentieel.html" class="active">Residentieel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="subpage-hero">
       <div class="container">
-        <div class="footer-card">
-          <div class="footer-grid">
-            <div>
-              <img src="/assets/logo.png" alt="VDW Projects &amp; Solutions logo" />
-              <p>Engineering, project management en pragmatische ondersteuning voor industriële en residentiële elektrische projecten.</p>
-            </div>
-            <div>
-              <p><strong>VDW Projects & Solutions</strong></p>
-              <p>Achturenstraat 5, 3010 Kessel-Lo</p>
-              <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
-              <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
-              <p>BTW BE1015.830.223</p>
-            </div>
-            <div>
-              <p><strong>Juridisch</strong></p>
-              <ul>
-                <li><a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
-                <li><a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
-                <li><a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-bottom">© 2026 VDW Projects &amp; Solutions. Alle rechten voorbehouden.</div>
-        </div>
+        <p class="subpage-label">Residentieel</p>
+        <h1>Residentiële installaties die veilig, conform en klaar voor later zijn.</h1>
+        <p>
+          Van nieuwe installaties en renovaties tot laadoplossingen en conformiteitswerken.
+          Altijd met aandacht voor een nette afwerking en een installatie die logisch opgebouwd is.
+        </p>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+
+        <div class="intro-grid">
+          <article class="content-card">
+            <h2>Diensten</h2>
+            <ul class="bullet-list">
+              <li>Volledige elektrische installaties voor nieuwbouw en renovatie</li>
+              <li>Klassieke installaties of domotica</li>
+              <li>Laadpalen met load balancing en PV-integratie</li>
+              <li>Thuisbatterijen en energiebeheer</li>
+              <li>Advies op maat van verbruik, comfort en toekomstplannen</li>
+            </ul>
+          </article>
+
+          <article class="content-card">
+            <h3>Focus</h3>
+            <p>
+              Residentiële projecten moeten niet alleen mooi uitgevoerd zijn,
+              maar ook logisch, veilig en conform.
+            </p>
+            <p>
+              Daarom ligt de nadruk op duidelijk advies, correcte dimensionering
+              en een nette oplevering die ook op lange termijn betrouwbaar blijft.
+            </p>
+
+            <div class="about-actions">
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
+              <a class="button button-secondary" href="over.html">Meer over onze aanpak</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-title-block">
+          <h2>Projecten</h2>
+          <p>
+            De bestaande laadpaalreferentie blijft behouden en wordt aangevuld
+            met residentiële projecten rond conformiteit, renovatie en bewoning.
+          </p>
+        </div>
+
+        <div class="project-grid-custom">
+          <article class="project-card-custom">
+            <img src="../assets/Laadpaal.jpg" alt="Laadpaal residentieel project">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span>Residentieel</span>
+                <span>Smart charging</span>
+              </div>
+              <h3>Laadpaal met slimme sturing</h3>
+              <p>
+                Installatie van een laadoplossing met load balancing en integratie in de woning,
+                afgestemd op verbruik en beschikbare capaciteit.
+              </p>
+              <a class="project-link" href="/nl/projecten/laadpaal.html">Meer info →</a>
+            </div>
+          </article>
+
+          <article class="project-card-custom">
+            <img src="../assets/buitenpost.jpg" alt="Elektrische installatie conform maken voor verkoop">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span>Conformiteit</span>
+                <span>Verkoop</span>
+              </div>
+              <h3>Elektrische installatie conform maken voor keuring en verkoop</h3>
+              <p>
+                Aanpassingen aan bestaande elektrische installaties om een geldig keuringsattest
+                te bekomen in functie van de verkoop van een woning.
+              </p>
+              <span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span>
+            </div>
+          </article>
+
+          <article class="project-card-custom">
+            <img src="../assets/Slide6.jpg" alt="Elektrische installatie conform maken na aankoop">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span>Renovatie</span>
+                <span>Bewoning</span>
+              </div>
+              <h3>Elektrische installatie conform maken na aankoop voor bewoning</h3>
+              <p>
+                Renovatie en rechtzetting van een elektrische installatie na aankoop van een woning,
+                zodat de installatie veilig en conform is voor dagelijks gebruik en verdere verbouwing.
+              </p>
+              <span class="project-placeholder">Projectinhoud kan later verder aangevuld worden</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        VDW Projects &amp; Solutions<br>
+        Achturenstraat 5<br>
+        3010 Kessel-Lo<br>
+        België
+      </p>
+
+      <p>
+        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
