@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MV Backbone Revamp – Airport | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Project page about the revamp of the medium-voltage backbone at Brussels Airport, including reinforcement of the 11 kV grid, new MV substations, new switchgear and new cable routes.">
+
+  <link rel="canonical" href="https://www.vdw-ps.be/en/projects/airport-mv-backbone.html">
+  <link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/luchthaven-ms-backbone.html">
+  <link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/airport-mv-backbone.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .project-hero {
+      padding: 88px 0 40px;
+    }
+
+    .project-hero .container {
+      max-width: 980px;
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .project-hero-intro {
+      max-width: 780px;
+      margin: 0;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .project-main {
+      padding: 10px 0 88px;
+    }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .project-content-card,
+    .project-side-card,
+    .project-image-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-content-card,
+    .project-side-card {
+      padding: 30px;
+    }
+
+    .project-content-card h2,
+    .project-side-card h3 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .project-content-card p,
+    .project-side-card p,
+    .project-content-card li {
+      color: rgba(45, 43, 39, 0.84);
+      line-height: 1.75;
+    }
+
+    .project-content-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-content-card ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+    }
+
+    .project-content-card li + li {
+      margin-top: 8px;
+    }
+
+    .project-meta-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .project-meta-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--color-dark);
+    }
+
+    .project-image-card {
+      overflow: hidden;
+    }
+
+    .project-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-status {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232, 141, 57, 0.12);
+      color: var(--color-accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .project-section + .project-section {
+      margin-top: 28px;
+    }
+
+    .photo-credit {
+      margin-top: 14px;
+      font-size: 0.86rem;
+      line-height: 1.6;
+      color: rgba(45, 43, 39, 0.65);
+    }
+
+    .photo-credit a {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 980px) {
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .project-hero {
+        padding: 64px 0 28px;
+      }
+
+      .project-main {
+        padding: 10px 0 64px;
+      }
+
+      .project-content-card,
+      .project-side-card {
+        padding: 22px;
+      }
+
+      .project-actions .button,
+      .project-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/en/index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/en/index.html">Home</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/industrial.html" class="active">Industrial</a>
+        <a href="/en/residential.html">Residential</a>
+        <a href="/nl/projecten/luchthaven-ms-backbone.html" class="lang-link">NL</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-label">Industrial project</p>
+        <h1>MV backbone revamp – airport</h1>
+        <p class="project-hero-intro">
+          Work preparation and project follow-up for the renewal and reinforcement of the
+          medium-voltage backbone at Brussels Airport, focused on new substations, new
+          switchgear, new cable routes and the wider electrification of the infrastructure.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-main">
+      <div class="container">
+        <div class="project-layout">
+
+          <div>
+            <article class="project-content-card project-section">
+              <h2>Project description</h2>
+
+              <p>
+                For Imtech Belgium, I work as work-preparation engineer and project manager
+                on the medium-voltage project <strong>"Stragrid"</strong> at Brussels Airport.
+                Within this project, Imtech, as part of the Cordeel Group, works together with
+                Mobix as a subcontractor on a major renewal of the existing medium-voltage
+                infrastructure.
+              </p>
+
+              <p>
+                The project aims to reinforce the existing <strong>11 kV medium-voltage
+                network</strong> and make it future-ready. New medium-voltage substations and
+                new MV switchgear are being installed, and ageing paper-lead cables are being
+                systematically replaced with new cable connections that better match the
+                airport's current and future power demand.
+              </p>
+
+              <p>
+                Besides renewing the installations, the project also includes laying entirely
+                new cable routes. These are realised through classic trenching, but also
+                through directional drilling at locations where open excavation is less
+                desirable or technically less feasible. In this way, the new network is
+                integrated into a complex and operational airport environment where continuity
+                and reliability are essential.
+              </p>
+
+              <p>
+                The assignment is therefore not just about replacing existing components, but
+                about building, step by step, a more robust medium-voltage backbone that can
+                support the airport's further growth, increased power demand and
+                electrification. Within that context, the focus is on solid preparation, clear
+                coordination between the parties involved and technical choices that remain
+                practically feasible during execution.
+              </p>
+            </article>
+
+            <article class="project-content-card project-section">
+              <h2>Scope delivered and prepared</h2>
+              <ul>
+                <li>Work preparation and project management for the MV backbone project "Stragrid"</li>
+                <li>Support for reinforcing the existing 11 kV medium-voltage network</li>
+                <li>Preparation and coordination for new MV substations and new MV switchgear</li>
+                <li>Replacement of existing paper-lead cables with new medium-voltage cables</li>
+                <li>Development of new cable routes within an operational airport environment</li>
+                <li>Coordination of execution methods via trenching and directional drilling</li>
+                <li>Technical follow-up of choices in terms of reliability, expansion and electrification</li>
+                <li>Coordination between the various contractors and partners involved in the project</li>
+              </ul>
+            </article>
+
+            <div class="project-actions">
+              <a class="button button-secondary" href="/en/industrial.html">Back to industrial</a>
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contact us</a>
+            </div>
+          </div>
+
+          <div>
+            <aside class="project-side-card project-section">
+              <h3>Project info</h3>
+
+              <div class="project-meta-list">
+                <div class="project-meta-item">
+                  <strong>Sector</strong>
+                  Airport infrastructure
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Role</strong>
+                  Work-preparation engineer and Project Manager
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Project</strong>
+                  Stragrid
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Technical scope</strong>
+                  11 kV medium voltage, substations, switchgear, cable renewal and new routes
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Partners</strong>
+                  Imtech Belgium, Cordeel Group and Mobix
+                </div>
+              </div>
+
+              <div class="project-status">MV backbone under renewal</div>
+            </aside>
+
+            <div class="project-image-card project-section">
+              <img src="../../assets/luchthaven.jpg" alt="Airport project">
+            </div>
+
+            <div class="photo-credit">
+              Photo credits: Konstantin von Wedelstaedt –
+              <a href="http://www.airliners.net/photo//1788412/L" target="_blank" rel="noopener">Gallery page</a>
+              |
+              <a href="http://cdn-www.airliners.net/aviation-photos/photos/2/1/4/1788412.jpg" target="_blank" rel="noopener">Photo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>VAT BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Legal</strong></p>
+            <ul>
+              <li><a href="../../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2B</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 VDW Projects &amp; Solutions. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
