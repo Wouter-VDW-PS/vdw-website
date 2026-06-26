@@ -1,118 +1,249 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Residentiële installatie – Laadbeheer - VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residentiële installatie – Slim laadbeheer | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Projectpagina over een residentiële installatie met slimme laadpaalsturing, load balancing en een slimme videodeurbel.">
+
+  <link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/ev-charger.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .project-hero {
+      padding: 88px 0 40px;
+    }
+
+    .project-hero .container {
+      max-width: 980px;
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .project-main {
+      padding: 10px 0 88px;
+    }
+
+    .project-content-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+      padding: 30px;
+    }
+
+    .project-content-card h2,
+    .project-content-card h3 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .project-content-card p,
+    .project-content-card li {
+      color: rgba(45, 43, 39, 0.84);
+      line-height: 1.75;
+    }
+
+    .project-content-card ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+    }
+
+    .project-content-card li + li {
+      margin-top: 8px;
+    }
+
+    .project-section + .project-section {
+      margin-top: 28px;
+    }
+
+    .project-banner {
+      background-image: url('../../assets/Laadpaal.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 280px;
+      border-radius: var(--radius-lg);
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .doorbell-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .doorbell-text {
+      flex: 1 1 300px;
+    }
+
+    .doorbell-image {
+      flex: 0 1 250px;
+    }
+
+    .doorbell-image img {
+      width: 100%;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 560px) {
+      .project-hero {
+        padding: 64px 0 28px;
+      }
+
+      .project-main {
+        padding: 10px 0 64px;
+      }
+
+      .project-content-card {
+        padding: 22px;
+      }
+
+      .project-banner {
+        height: 200px;
+      }
+
+      .project-actions .button,
+      .project-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/nl/index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
         <a href="/nl/index.html">Home</a>
-        <a href="/nl/residentieel.html">Residentieel</a>
-        <a href="/nl/industrieel.html">Industrieel</a>
         <a href="/nl/over.html">Over</a>
-        <a href="/nl/contact.html">Contact</a>
-        <a href="/en/index.html">EN</a>
+        <a href="/nl/industrieel.html">Industrieel</a>
+        <a href="/nl/residentieel.html" class="active">Residentieel</a>
+        <a href="/en/projects/ev-charger.html" class="lang-link">EN</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <div style="
-      background-image: url('/assets/Laadpaal.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 250px;
-      border-radius: 8px;
-      margin-bottom: 2rem;">
-    </div>
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-label">Residentieel project</p>
+        <h1>Residentiële installatie – Slim laadbeheer (2025)</h1>
+      </div>
+    </section>
 
-    <h2>Residentiële installatie – Slim laadbeheer (2025)</h2>
+    <section class="project-main">
+      <div class="container">
 
-    <p><strong>Type project:</strong> Particuliere totaalinstallatie</p>
+        <div class="project-banner"></div>
 
-    <p>
-      Voor deze klant werd een slimme elektrische installatie voorzien, met oog op comfort, veiligheid en efficiëntie.
-    </p>
+        <article class="project-content-card project-section">
+          <p><strong>Type project:</strong> Particuliere totaalinstallatie</p>
 
-    <h3>🚗 Laadpaal met slimme sturing</h3>
-    <ul>
-      <li>Individuele laadpaal met load balancing configuratie</li>
-      <li>Het systeem pauzeert automatisch wanneer er onvoldoende vermogen beschikbaar is, zodat het totale verbruik onder het capaciteits­tarief blijft</li>
-      <li>Indien zonnepanelen aanwezig zijn, kan de installatie ingesteld worden om enkel op zonne-energie te laden wanneer beschikbaar</li>
-    </ul>
+          <p>
+            Voor deze klant werd een slimme elektrische installatie voorzien, met oog op comfort, veiligheid en efficiëntie.
+          </p>
 
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; align-items: center;">
-  <!-- Tekst links -->
-  <div style="flex: 1 1 300px;">
-    <h3>📷 Slimme deurbel met binnenposten</h3>
-    <ul>
-      <li>Videodeurbel met touchscreen binnenposten</li>
-      <li>Volledige smartphone-integratie voor meldingen, bediening op afstand en communicatie</li>
-    </ul>
-  </div>
+          <h3>🚗 Laadpaal met slimme sturing</h3>
+          <ul>
+            <li>Individuele laadpaal met load balancing configuratie</li>
+            <li>Het systeem pauzeert automatisch wanneer er onvoldoende vermogen beschikbaar is, zodat het totale verbruik onder het capaciteitstarief blijft</li>
+            <li>Indien zonnepanelen aanwezig zijn, kan de installatie ingesteld worden om enkel op zonne-energie te laden wanneer beschikbaar</li>
+          </ul>
 
-  <!-- Afbeelding rechts -->
-  <div style="flex: 0 1 250px;">
-    <img src="/assets/buitenpost.jpg" alt="Slimme deurbel buitenpost" style="width: 100%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-  </div>
-</div>
+          <div class="doorbell-flex">
+            <div class="doorbell-text">
+              <h3>📷 Slimme deurbel met binnenposten</h3>
+              <ul>
+                <li>Videodeurbel met touchscreen binnenposten</li>
+                <li>Volledige smartphone-integratie voor meldingen, bediening op afstand en communicatie</li>
+              </ul>
+            </div>
 
+            <div class="doorbell-image">
+              <img src="../../assets/buitenpost.jpg" alt="Slimme deurbel buitenpost">
+            </div>
+          </div>
+        </article>
 
-    <p><a href="/nl/residentieel.html">&larr; Terug naar residentiële projecten</a></p>
+        <div class="project-actions">
+          <a class="button button-secondary" href="/nl/residentieel.html">Terug naar residentieel</a>
+          <a class="contact-button" href="mailto:info@vdw-ps.be">Contacteer ons</a>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>BTW BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Juridisch</strong></p>
+            <ul>
+              <li><a href="../../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacybeleid</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2B</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Algemene voorwaarden B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 VDW Projects &amp; Solutions. Alle rechten voorbehouden.
+        </div>
+      </div>
     </div>
-
-    <!-- Contactgegevens -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">BTW BE1015.830.223</p>
-    </div>
-
-    <!-- Juridische links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Juridisch</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacybeleid
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Algemene voorwaarden B2C
-        </a>
-      </p>
-    </div>
-
-  </div>
-
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. Alle rechten voorbehouden.
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
