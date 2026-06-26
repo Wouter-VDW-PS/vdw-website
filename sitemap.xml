@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/index.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/index.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/over.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/over.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/about.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/over.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/about.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/industrieel.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/industrieel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/industrial.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/industrial.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/industrieel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/industrial.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/residentieel.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/residentieel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/residential.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/residential.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/residentieel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/residential.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/bess.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/pv-bess.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/pv-bess.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/bess.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/foodindustrie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/food-industry.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/food-industry.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/foodindustrie.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/luchthaven-ms-backbone.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/airport-mv-backbone.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/airport-mv-backbone.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/luchthaven-ms-backbone.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/conform-verkoop.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/compliance-sale.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/compliance-sale.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/conform-verkoop.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/conform-bewoning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/compliance-occupancy.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/compliance-occupancy.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/conform-bewoning.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.vdw-ps.be/nl/projecten/laadpaal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/ev-charger.html"/>
+  </url>
+  <url>
+    <loc>https://www.vdw-ps.be/en/projects/ev-charger.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/laadpaal.html"/>
+  </url>
+
+</urlset>
