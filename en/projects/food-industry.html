@@ -1,112 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Food Industry Project – VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Manager – Food Industry | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="Project page about the preparation and execution of HV, LV and no-break networks, including medium voltage, transformers and low-voltage distribution in an industrial environment.">
+
+  <link rel="canonical" href="https://www.vdw-ps.be/en/projects/food-industry.html">
+  <link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/projecten/foodindustrie.html">
+  <link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/projects/food-industry.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .project-hero {
+      padding: 88px 0 40px;
+    }
+
+    .project-hero .container {
+      max-width: 980px;
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .project-hero-intro {
+      max-width: 780px;
+      margin: 0;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .project-main {
+      padding: 10px 0 88px;
+    }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .project-content-card,
+    .project-side-card,
+    .project-image-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-content-card,
+    .project-side-card {
+      padding: 30px;
+    }
+
+    .project-content-card h2,
+    .project-side-card h3 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .project-content-card p,
+    .project-side-card p,
+    .project-content-card li {
+      color: rgba(45, 43, 39, 0.84);
+      line-height: 1.75;
+    }
+
+    .project-content-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-content-card ul {
+      margin: 0 0 18px;
+      padding-left: 20px;
+    }
+
+    .project-content-card li + li {
+      margin-top: 8px;
+    }
+
+    .project-meta-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .project-meta-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--color-dark);
+    }
+
+    .project-image-card {
+      overflow: hidden;
+    }
+
+    .project-image-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-status {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232, 141, 57, 0.12);
+      color: var(--color-accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .project-section + .project-section {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 980px) {
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .project-hero {
+        padding: 64px 0 28px;
+      }
+
+      .project-main {
+        padding: 10px 0 64px;
+      }
+
+      .project-content-card,
+      .project-side-card {
+        padding: 22px;
+      }
+
+      .project-actions .button,
+      .project-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/en/index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="/en/index.html">Home</a>
-        <a href="/en/industrial.html">Industrial</a>
-        <a href="/en/residential.html">Residential</a>
         <a href="/en/about.html">About</a>
-        <a href="/en/contact.html">Contact</a>
-        <a href="/nl/index.html">NL</a>
+        <a href="/en/industrial.html" class="active">Industrial</a>
+        <a href="/en/residential.html">Residential</a>
+        <a href="/nl/projecten/foodindustrie.html" class="lang-link">NL</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <div style="
-      background-image: url('/assets/Tiense_Suikerraffinaderij.jpg');
-      background-size: cover; background-position: center;
-      height:250px; border-radius:8px; margin-bottom:2rem;">
-    </div>
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-label">Industrial project</p>
+        <h1>Project Manager – Food Industry</h1>
+        <p class="project-hero-intro">
+          Support for the preparation and execution of electrical infrastructure works
+          within an industrial environment, with a focus on medium voltage, low voltage
+          and future expandability of the installation.
+        </p>
+      </div>
+    </section>
 
-    <h2>Project Manager – Food Industry (2024–2025)</h2>
-    <p><strong>Sector:</strong> Food & Beverage<br>
-    <strong>Role:</strong> Project Management & Engineering</p>
+    <section class="project-main">
+      <div class="container">
+        <div class="project-layout">
 
-    <p>
-      Technical engineering and project follow-up across multiple sub-projects on an industrial production site,
-      covering high and low voltage as well as network preparation.
-    </p>
+          <div>
+            <article class="project-content-card project-section">
+              <h2>Project description</h2>
 
-    <h3>🔌 10 kV High-Voltage Cables</h3>
-    <ul>
-      <li>Feasibility study, detailed design, tendering and comparison for five new 10 kV cables.</li>
-    </ul>
+              <p>
+                For this project, support was provided for the technical preparation,
+                coordination and follow-up of new electrical infrastructure for the site.
+                The works covered both medium and low voltage and were aimed at a reliable
+                power supply for the installations involved, with sufficient room for future
+                expansion.
+              </p>
 
-    <h3>⚡ Low-Voltage Distribution (400 V & 690 V)</h3>
-    <ul>
-      <li>Detail engineering and tender packages for a new LV panel in the water treatment area.</li>
-    </ul>
+              <p>
+                The first execution phase has already been completed. This involved laying
+                a completely new cable route from the central building to the water
+                treatment plant. Along this new route, with a total length of approximately
+                350 metres, new medium-voltage cables were pulled through a newly installed
+                cable ladder.
+              </p>
 
-    <h3>🔋 UPS Network</h3>
-    <ul>
-      <li>Feasibility study and future-proof design: static vs rotating UPS solutions.</li>
-      <li>Tender documents preparation for UPS and standby generator options.</li>
-    </ul>
+              <p>
+                At the water treatment plant, existing medium-voltage substations were
+                redeployed. These substations were relocated internally by Tiense Suiker
+                from one location to another position on the site, after which they were
+                reintegrated into the new overall setup. In this substation, the new MV
+                cables were connected to the existing ABB medium-voltage switchgear. On the
+                side of the central building, connections were made to Siemens medium-voltage
+                switchgear.
+              </p>
 
-    <h3>🌐 Fiber-Optic Network</h3>
-    <ul>
-      <li>Design and lay-out of a new 10 Gb fiber-optic backbone across the site.</li>
-    </ul>
+              <p>
+                Important preparations were also made on the low-voltage side. Downstream
+                of the transformer, a new PrismaSeT 690 V board was installed, alongside an
+                existing Sivacon 400 V board. From there, new low-voltage cables were provided
+                for further distribution to, among others, the cooling towers and the water
+                treatment plant.
+              </p>
 
-    <p><a href="/en/industrial.html">← Back to industrial projects</a></p>
+              <p>
+                The entire setup was also prepared in such a way that future expansions and
+                additional connections can be made in a logical and technically sound manner.
+                The project was therefore not conceived merely as an immediate solution, but
+                also as a robust basis for future growth of the installation.
+              </p>
+            </article>
+
+            <article class="project-content-card project-section">
+              <h2>Scope delivered</h2>
+              <ul>
+                <li>Preparation and follow-up of a new MV cable route of approximately 350 metres</li>
+                <li>Installation of a new cable ladder between the central building and the water treatment plant</li>
+                <li>Pulling and connecting of new medium-voltage cables</li>
+                <li>Integration of relocated existing MV substations at the new location</li>
+                <li>Connections to ABB and Siemens MV switchgear</li>
+                <li>Installation of a new PrismaSeT 690 V board</li>
+                <li>Integration of an existing Sivacon 400 V board</li>
+                <li>New low-voltage distribution to the cooling towers and water treatment plant</li>
+                <li>Preparation of the installation for future expansions</li>
+              </ul>
+            </article>
+
+            <div class="project-actions">
+              <a class="button button-secondary" href="/en/industrial.html">Back to industrial</a>
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contact us</a>
+            </div>
+          </div>
+
+          <div>
+            <aside class="project-side-card project-section">
+              <h3>Project info</h3>
+
+              <div class="project-meta-list">
+                <div class="project-meta-item">
+                  <strong>Sector</strong>
+                  Food industry
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Role</strong>
+                  Project Manager / technical project support
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Disciplines</strong>
+                  Medium voltage, low voltage, cable infrastructure, distribution
+                </div>
+
+                <div class="project-meta-item">
+                  <strong>Location in scope</strong>
+                  Central building, water treatment plant and adjacent consumers
+                </div>
+              </div>
+
+              <div class="project-status">First execution phase completed</div>
+            </aside>
+
+            <div class="project-image-card project-section">
+              <img src="../../assets/Tiense_Suikerraffinaderij.jpg" alt="Food industry project">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>VAT BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Legal</strong></p>
+            <ul>
+              <li><a href="../../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2B</a></li>
+              <li><a href="../../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 VDW Projects &amp; Solutions. All rights reserved.
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <!-- Company details -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">VAT BE1015.830.223</p>
-    </div>
-
-    <!-- Legal links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Legal</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacy Policy
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2C
-        </a>
-      </p>
-    </div>
-
-  </div>
-
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. All rights reserved.
-  </div>
-</footer>
 </body>
 </html>
