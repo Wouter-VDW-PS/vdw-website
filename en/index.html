@@ -1,213 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/style.css?v=17" />
-  <style>
-    .split-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .split-columns > div {
-      flex: 1;
-      min-width: 300px;
-      background: #B5AF9D;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.05);
-    }
-    .split-columns h3 {
-      margin-top: 0;
-    }
-    .hero-slideshow {
-    width: 100%;
-    background: #2D2B27;
-    overflow: hidden;
-    padding: 0;              /* geen extra padding */
-  }
-  .hero-slideshow .slider-inner {
-    max-width: 1200px;       /* zelfde max breedte als je .container */
-    margin: 0 auto;          /* centreer */
-    position: relative;      /* voor overlay */
-    height: 500px;           /* vaste hoogte */
-  }
-  .hero-slideshow .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .hero-slideshow .swiper-wrapper {
-    /* hoeft niks extra */
-  }
-  .hero-slideshow .swiper-slide {
-    /* 100% breedte van .slider-inner */
-    flex: 0 0 100%;
-  }
-  .hero-slideshow .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;       /* vult de slide volledig */
-    object-position: center; /* center in box */
-    display: block;
-  }
-  .hero-slideshow .header-text-overlay {
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    padding: 2rem;
-    display: flex; flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 10;
-    color: #F1EDE2;
-  }
-  /* Zorg dat content er netjes onder ligt */
-  main.container {
-    position: relative;
-    z-index: 1;
-  }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VDW Projects & Solutions | Electrical Engineering & Project Management Belgium</title>
+
+<meta name="description" content="VDW Projects & Solutions supports industrial and residential electrical projects with expertise in engineering, project management and energy infrastructure in Belgium.">
+
+<link rel="canonical" href="https://www.vdw-ps.be/en/index.html">
+<link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/index.html">
+<link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://www.vdw-ps.be/nl/index.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="../assets/symbool.png">
+<link rel="apple-touch-icon" href="../assets/symbool.png">
+
+<link rel="stylesheet" href="/style.css?v=20260316">
+
+<style>
+
+.remou-logo{
+height:65px;
+margin:18px 0 12px 0;
+filter:brightness(0) invert(1);
+opacity:0.9;
+}
+
+</style>
+
 </head>
-<body>
-  <header class="hero-slideshow">
-    <div class="slider-inner">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="/assets/Slide1.jpg" alt="Slide 1"/></div>
-          <div class="swiper-slide"><img src="/assets/Slide2.jpg" alt="Slide 2"/></div>
-          <div class="swiper-slide"><img src="/assets/Slide3.jpeg" alt="Slide 3"/></div>
-          <div class="swiper-slide"><img src="/assets/Slide4.jpg" alt="Slide 4"/></div>
-          <div class="swiper-slide"><img src="/assets/Slide5.jpg" alt="Slide 5"/></div>
-          <div class="swiper-slide"><img src="/assets/Slide6.jpg" alt="Slide 6"/></div>
-        </div>
-      </div>
-      <div class="header-text-overlay">
-        <h1>VDW Projects & Solutions</h1>
-        <nav>
-          <a href="/en/index.html">Home</a>
-          <a href="/en/industrial.html">Industrial</a>
-          <a href="/en/residential.html">Residential</a>
-          <a href="/en/about.html">About</a>
-          <a href="/en/contact.html">Contact</a>
-          <a href="/nl/index.html">NL</a>
-        </nav>
-      </div>
-    </div>
-  </header>
 
-  <main class="container">
-    <h2>VDW Projects & Solutions</h2>
-    <p><strong>Your partner for complete electrical solutions in industry and residential settings.</strong></p>
-    <p>
-      We offer consultancy, engineering and project management for electrical installations — 
-      from technical preparation to execution, both in industrial and residential environments.
-    </p>
 
-    <div class="split-columns">
-      <div>
-        <h3>⚙️ Industry</h3>
-        <strong>Project Management</strong>
-        <ul>
-          <li>Project planning & preparation</li>
-          <li>Project follow-up</li>
-        </ul>
-        <strong>E&I Engineering</strong>
-        <ul>
-          <li>PLC / DCS</li>
-          <li>Low- & high-voltage distribution (up to 36kV)</li>
-          <li>EMC, AREI, ATEX compliance</li>
-          <li>Emergency power (UPS & Genset)</li>
-        </ul>
-        <p><a href="/en/industrial.html">👉 Learn more about our industrial services</a></p>
-      </div>
+<body class="home-page">
 
-      <div>
-        <h3>🏠 Residential</h3>
-        <strong>Electrical Installations</strong>
-        <ul>
-          <li>Houses & apartments</li>
-          <li>Traditional wiring or home automation</li>
-        </ul>
-        <strong>Charging Stations & Home Batteries</strong>
-        <ul>
-          <li>Smart load balancing</li>
-          <li>Custom configuration based on usage & production</li>
-        </ul>
-        <strong>Tailored Solutions</strong>
-        <ul>
-          <li>Personalized advice for every project</li>
-        </ul>
-        <p><a href="/en/residential.html">👉 Learn more about our residential solutions</a></p>
-      </div>
-    </div>
 
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; text-align: center;">
-      <p>🤝 Ready to collaborate? <a href="/en/contact.html">Get in touch</a> — we’d love to hear from you.</p>
-    </div>
-  </main>
+<header class="site-header">
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
-    </div>
+<div class="container header-inner">
 
-    <!-- Company details -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">VAT BE1015.830.223</p>
-    </div>
+<a href="index.html" class="logo-link">
+<img src="../assets/logo.png" alt="VDW Projects & Solutions logo" class="logo">
+</a>
 
-    <!-- Legal links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Legal</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacy Policy
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2C
-        </a>
-      </p>
-    </div>
+<nav class="main-nav">
 
-  </div>
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="industrial.html">Industrial</a>
+<a href="residential.html">Residential</a>
+<a href="/nl/index.html" class="lang-link">NL</a>
 
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. All rights reserved.
-  </div>
+</nav>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+
+<section class="hero">
+
+<div class="container hero-inner">
+
+<p class="eyebrow">VDW Projects &amp; Solutions</p>
+
+<h1>
+Engineering &amp; Project Management for electrical installations
+</h1>
+
+<p class="hero-text">
+VDW Projects &amp; Solutions supports industrial and residential projects
+with expertise in electrical installations, energy infrastructure and project management.
+</p>
+
+<div class="hero-actions">
+
+<a class="button button-primary" href="mailto:info@vdw-ps.be">
+Contact us
+</a>
+
+<a class="button button-secondary" href="industrial.html">
+View projects
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p class="section-label">Activities</p>
+
+<h2>What we do</h2>
+
+<p>
+Practical support for industrial infrastructure projects and residential
+electrical installations, always with a focus on quality, oversight and execution.
+</p>
+
+</div>
+
+
+
+<div class="card-grid">
+
+
+<a class="card card-link-block" href="industrial.html">
+
+<p class="card-tag">Industrial</p>
+
+<h3>Industrial electrical projects</h3>
+
+<p>
+Consultancy, engineering and project management for industrial electrical installations.
+From instrumentation and low voltage to medium voltage and energy infrastructure.
+</p>
+
+<span class="card-link">Learn more</span>
+
+</a>
+
+
+
+<a class="card card-link-block" href="residential.html">
+
+<p class="card-tag">Residential</p>
+
+<h3>Residential electrical installations</h3>
+
+<p>
+Electrical renovations, EV chargers and technical upgrades
+with attention to safety, compliance and a clean installation.
+</p>
+
+<span class="card-link">Learn more</span>
+
+</a>
+
+
+
+<a class="card card-link-block" href="about.html">
+
+<p class="card-tag">Approach</p>
+
+<h3>From study to execution</h3>
+
+<p>
+Support with work preparation, engineering, quote comparison,
+follow-up of execution and coordination of electrical infrastructure projects.
+</p>
+
+<span class="card-link">Learn more</span>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section section-muted">
+
+<div class="container">
+
+<div class="section-heading">
+
+<p class="section-label">Focus</p>
+
+<h2>Practical, technical and results-driven</h2>
+
+<p>
+VDW Projects &amp; Solutions combines technical knowledge with a pragmatic approach.
+No unnecessary complexity, just clear support that moves projects forward.
+</p>
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-item">
+
+<h3>Engineering</h3>
+
+<p>
+Technical design of electrical installations and energy infrastructure
+with attention to feasibility and buildability.
+</p>
+
+</div>
+
+
+
+<div class="feature-item">
+
+<h3>Work preparation</h3>
+
+<p>
+Bringing structure to scope, planning, materials, contractors and execution
+so projects can be started up and followed up more smoothly.
+</p>
+
+</div>
+
+
+
+<div class="feature-item">
+
+<h3>Project follow-up</h3>
+
+<p>
+Coordination and follow-up on a technical and organisational level,
+with a focus on quality, progress and reliability.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="remou-section">
+
+<div class="container remou-inner">
+
+<p class="section-label remou-label">
+Technology partner
+</p>
+
+<img src="../assets/Logo_Remou.png"
+class="remou-logo"
+alt="REMOU Energy Management Platform">
+
+<h2>
+Energy Management Systems
+</h2>
+
+<p>
+For smart energy control and EMS integrations, VDW Projects &amp; Solutions
+works together with REMOU. Together we integrate solar panels, battery storage,
+charging infrastructure and industrial installations into a single intelligent
+energy platform that optimises energy consumption and enables future
+electrification.
+</p>
+
+<a class="button button-remou"
+href="https://remou.be"
+target="_blank"
+rel="noopener noreferrer">
+
+REMOU
+
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="footer-card">
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+<img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+</div>
+
+
+<div class="footer-contact">
+
+<p><strong>VDW Projects &amp; Solutions</strong></p>
+
+<p>Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+
+<p>
+<a href="mailto:info@vdw-ps.be">
+info@vdw-ps.be
+</a>
+</p>
+
+<p>
+<a href="tel:+32479613739">
++32 479 61 37 39
+</a>
+</p>
+
+<p>VAT BE1015.830.223</p>
+
+</div>
+
+
+
+<div class="footer-legal">
+
+<p><strong>Legal</strong></p>
+
+<ul>
+
+<li>
+<a href="../assets/docs/privacy.pdf" target="_blank" rel="noopener">
+Privacy policy
+</a>
+</li>
+
+<li>
+<a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
+Terms &amp; conditions B2B
+</a>
+</li>
+
+<li>
+<a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
+Terms &amp; conditions B2C
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+© 2026 VDW Projects &amp; Solutions. All rights reserved.
+</div>
+
+
+</div>
+
+</div>
+
 </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      new Swiper('.swiper-container', {
-        loop: true,
-        slidesPerView: 1,
-        autoplay: { delay: 5000, disableOnInteraction: false },
-        speed: 800,
-        effect: 'slide',
-      });
-    });
-  </script>
+
+
 </body>
 </html>
