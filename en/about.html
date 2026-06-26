@@ -1,122 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About – VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | VDW Projects &amp; Solutions</title>
+  <meta name="description" content="More about VDW Projects & Solutions, the approach of Wouter Van De Wiele and our expertise in industrial and residential electrical projects.">
+
+  <link rel="canonical" href="https://www.vdw-ps.be/en/about.html">
+  <link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/over.html">
+  <link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/about.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.vdw-ps.be/nl/over.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../assets/symbool.png">
+  <link rel="apple-touch-icon" href="../assets/symbool.png">
+
+  <link rel="stylesheet" href="/style.css?v=20260316">
+
+  <style>
+    .subpage-hero {
+      padding: 88px 0 36px;
+    }
+
+    .subpage-hero .container {
+      max-width: 980px;
+    }
+
+    .subpage-label {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .subpage-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .subpage-hero p {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(45, 43, 39, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .content-section {
+      padding: 20px 0 88px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .content-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 38px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .content-card h2 {
+      margin: 0 0 22px;
+      line-height: 1.1;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      letter-spacing: -0.02em;
+    }
+
+    .content-card p {
+      margin: 0 0 22px;
+      color: rgba(45, 43, 39, 0.84);
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .content-card p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .about-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .about-photo-card {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .about-photo-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .about-photo-caption {
+      padding: 20px 22px 22px;
+      border-top: 1px solid var(--color-border);
+      background: rgba(255, 255, 255, 0.55);
+    }
+
+    .about-photo-caption h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.2;
+    }
+
+    .about-photo-caption p {
+      margin: 0;
+      color: rgba(45, 43, 39, 0.76);
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .approach-item {
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .approach-item h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.2;
+    }
+
+    .approach-item p {
+      margin: 0;
+      color: rgba(45, 43, 39, 0.8);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1024px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-photo-card img {
+        min-height: 420px;
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .subpage-hero {
+        padding: 64px 0 28px;
+      }
+
+      .content-section {
+        padding: 18px 0 64px;
+      }
+
+      .content-card {
+        padding: 24px;
+      }
+
+      .content-card p {
+        font-size: 0.98rem;
+      }
+
+      .about-photo-card img {
+        min-height: 320px;
+      }
+
+      .about-actions .button,
+      .about-actions .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
-        <a href="/en/index.html">Home</a>
-        <a href="/en/industrial.html">Industrial</a>
-        <a href="/en/residential.html">Residential</a>
-        <a href="/en/about.html">About</a>
-        <a href="/en/contact.html">Contact</a>
-        <a href="/nl/index.html">NL</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="VDW Projects &amp; Solutions home">
+        <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="industrial.html">Industrial</a>
+        <a href="residential.html">Residential</a>
+        <a href="/nl/over.html" class="lang-link">NL</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Wouter Van De Wiele</h2>
-    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem;">
-      <div style="flex:0 0 180px;">
-        <img src="/assets/wouter.jpg" alt="Wouter Van De Wiele" style="width:100%; border-radius:8px;">
-      </div>
-      <div style="flex:1 1 300px;">
-        <p><strong>Founder of VDW Projects & Solutions</strong></p>
+  <main>
+    <section class="subpage-hero">
+      <div class="container">
+        <p class="subpage-label">About</p>
+        <h1>Technically strong, practical in execution.</h1>
         <p>
-          With over 10 years of experience in industrial and residential electrical engineering, I combine technical depth with a practical project approach.
-          From basic and detailed engineering to project management, I support clients from concept through handover.
+          VDW Projects &amp; Solutions supports electrical projects with a combination of
+          technical knowledge, work preparation and project-based follow-up. Always with a focus on
+          feasible solutions, clear communication and an execution that holds up.
         </p>
       </div>
-    </div>
+    </section>
 
-    <h3>🔧 Expertise</h3>
-    <ul>
-      <li>Project management – from offer to commissioning</li>
-      <li>E&I hardware engineering (instrumentation up to 36kV)</li>
-      <li>PLC / DCS migrations (Siemens TIA Portal & PCS7)</li>
-      <li>Low- and high-voltage installations, UPS, EMC, AREI & ATEX</li>
-      <li>Residential installations: home automation, charging stations, home batteries</li>
-    </ul>
+    <section class="content-section">
+      <div class="container">
 
-    <h3>💼 Experience</h3>
-    <p><strong>Freelance Project Manager – Food Industry (2024–2025)</strong><br>
-      Feasibility studies, tender comparisons and preparation for high-voltage cables, UPS systems and fiber-optic networks.
-    </p>
-    <p><strong>Project Manager – Biotech (2023–2024)</strong><br>
-      Feasibility, tendering and project follow-up for low-voltage installations, motor controls, DCS/PLC migrations and office/lab refurbishments.
-    </p>
-    <p><strong>Team Lead E&I – Coretecs (2023–2024)</strong><br>
-      Team coordination, sales and execution for energy & network integration projects (incl. PV+BESS with Fluvius).
-    </p>
-    <p><strong>Project Engineer – Camco (2022)</strong><br>
-      Design & installation of OCR solutions in container terminals across Europe & Saudi Arabia.
-    </p>
-    <p><strong>Project Engineer – Process Automation Solutions (2015–2022)</strong><br>
-      End-to-end engineering and project management in pharma, biotech, food, chemical & petrochemical sectors.
-    </p>
+        <div class="content-grid">
+          <article class="content-card">
+            <h2>A pragmatic approach to electrical projects</h2>
 
-    <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid #ddd; text-align:center;">
-      <p>
-        Want to learn more about our ⚙️ <a href="/en/industrial.html">industrial services</a><br>
-        or 🏠 <a href="/en/residential.html">residential solutions</a>?<br>
-        Or just <a href="/en/contact.html">get in touch</a>? We’re here to help.
-      </p>
-    </div>
+            <p>
+              VDW Projects &amp; Solutions was founded by Wouter Van De Wiele and supports
+              both industrial and residential electrical projects. The focus is on a strong
+              combination of technical expertise, clear structure and an approach that remains
+              workable in practice.
+            </p>
+
+            <p>
+              In industrial environments, this often involves electrical infrastructure, medium voltage,
+              energy distribution and the preparation and follow-up of complex projects. The emphasis
+              is on engineering, work preparation, technical coordination and support during execution.
+            </p>
+
+            <p>
+              In residential projects, the focus shifts to safe, compliant and future-proof
+              installations such as EV chargers, renovations and energy management. There too, a clean
+              execution, logical design and clear communication remain central.
+            </p>
+
+            <p>
+              By combining technical knowledge with project-based follow-up, the result is an approach
+              that is not only correct on paper, but that also works on site and during execution.
+            </p>
+
+            <div class="about-actions">
+              <a class="contact-button" href="mailto:info@vdw-ps.be">Contact us</a>
+              <a class="button button-secondary" href="industrial.html">View projects</a>
+            </div>
+          </article>
+
+          <aside class="about-photo-card">
+            <img src="../assets/wouter.jpg" alt="Wouter Van De Wiele">
+            <div class="about-photo-caption">
+              <h3>Wouter Van De Wiele</h3>
+              <p>
+                Engineering, work preparation and project follow-up for industrial and residential
+                electrical projects.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="approach-grid">
+          <div class="approach-item">
+            <h3>Engineering</h3>
+            <p>
+              Technical design of electrical installations and infrastructure with attention
+              to feasibility, safety and practical execution.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h3>Work preparation</h3>
+            <p>
+              Bringing structure to scope, planning, materials and contractors so projects
+              are clearly prepared and efficiently followed up.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <h3>Project follow-up</h3>
+            <p>
+              Coordination of technical files and execution with a focus on progress,
+              quality and clear communication between all parties involved.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../assets/logo.png" alt="VDW Projects &amp; Solutions logo">
+          </div>
+
+          <div class="footer-contact">
+            <p><strong>VDW Projects &amp; Solutions</strong></p>
+            <p>Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+            <p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+            <p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+            <p>VAT BE1015.830.223</p>
+          </div>
+
+          <div class="footer-legal">
+            <p><strong>Legal</strong></p>
+            <ul>
+              <li><a href="../assets/docs/privacy.pdf" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2B</a></li>
+              <li><a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">Terms &amp; conditions B2C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 VDW Projects &amp; Solutions. All rights reserved.
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <!-- Company details -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">VAT BE1015.830.223</p>
-    </div>
-
-    <!-- Legal links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Legal</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacy Policy
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2C
-        </a>
-      </p>
-    </div>
-
-  </div>
-
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. All rights reserved.
-  </div>
-</footer>
 </body>
 </html>
