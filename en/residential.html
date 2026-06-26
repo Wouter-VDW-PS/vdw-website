@@ -1,117 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Residential – VDW Projects & Solutions</title>
-  <link rel="stylesheet" href="/style.css" />
-  <style>
-    .project-card {
-      background:#B5AF9D; border-radius:8px;
-      box-shadow:0 0 6px rgba(0,0,0,0.1);
-      overflow:hidden; margin-top:2rem;
-    }
-    .project-header { background:#f0f0f0; padding:1rem; }
-    .project-content-bg {
-      background-size:cover; background-position:center;
-      padding:2rem; color:white; min-height:180px;
-      display:flex; flex-direction:column; justify-content:flex-end;
-    }
-    .overlay { background:rgba(0,0,0,0.5); padding:1rem; border-radius:8px;}
-    .project-card a { color:#fff; text-decoration:underline; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential Electrical Installations | EV Chargers & Compliance | VDW Projects &amp; Solutions</title>
+<meta name="description" content="Residential electrical installations, EV chargers, home batteries and compliance works for homes in Belgium.">
+
+<link rel="canonical" href="https://www.vdw-ps.be/en/residential.html">
+<link rel="alternate" hreflang="nl" href="https://www.vdw-ps.be/nl/residentieel.html">
+<link rel="alternate" hreflang="en" href="https://www.vdw-ps.be/en/residential.html">
+<link rel="alternate" hreflang="x-default" href="https://www.vdw-ps.be/nl/residentieel.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="../assets/symbool.png">
+<link rel="apple-touch-icon" href="../assets/symbool.png">
+
+<link rel="stylesheet" href="/style.css?v=20260316">
+
+<style>
+
+.subpage-hero{
+padding:88px 0 48px;
+}
+
+.subpage-hero .container{
+max-width:980px;
+}
+
+.subpage-label{
+margin:0 0 14px;
+font-size:0.86rem;
+font-weight:700;
+letter-spacing:0.08em;
+text-transform:uppercase;
+color:var(--color-accent);
+}
+
+.subpage-hero h1{
+margin:0 0 18px;
+font-size:clamp(2.1rem,4vw,3.8rem);
+line-height:1.08;
+letter-spacing:-0.02em;
+}
+
+.subpage-hero p{
+margin:0;
+max-width:800px;
+color:rgba(45,43,39,0.82);
+font-size:1.05rem;
+}
+
+.content-section{
+padding:32px 0 88px;
+}
+
+.intro-grid{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:28px;
+margin-bottom:34px;
+}
+
+.content-card{
+background:var(--color-card);
+border:1px solid var(--color-border);
+border-radius:var(--radius-lg);
+padding:30px;
+box-shadow:var(--shadow-subtle);
+}
+
+.content-card h2,
+.content-card h3{
+margin-top:0;
+margin-bottom:16px;
+line-height:1.15;
+}
+
+.content-card p:last-child,
+.content-card ul:last-child{
+margin-bottom:0;
+}
+
+.content-card p,
+.content-card li{
+color:rgba(45,43,39,0.82);
+}
+
+.bullet-list{
+margin:0;
+padding-left:18px;
+}
+
+.bullet-list li + li{
+margin-top:10px;
+}
+
+.section-title-block{
+margin:0 0 26px;
+max-width:760px;
+}
+
+.section-title-block h2{
+margin:0 0 10px;
+line-height:1.1;
+}
+
+.section-title-block p{
+margin:0;
+color:rgba(45,43,39,0.82);
+}
+
+.project-grid-custom{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:24px;
+}
+
+.project-card-custom{
+display:block;
+background:var(--color-card);
+border:1px solid var(--color-border);
+border-radius:var(--radius-lg);
+overflow:hidden;
+box-shadow:var(--shadow-subtle);
+text-decoration:none;
+color:inherit;
+transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);
+}
+
+.project-card-custom:hover{
+transform:translateY(-4px);
+box-shadow:var(--shadow-soft);
+border-color:rgba(232,141,57,0.28);
+}
+
+.project-card-custom:hover h3{
+color:var(--color-accent);
+}
+
+.project-card-custom img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.project-card-body{
+padding:24px;
+}
+
+.project-meta{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-bottom:12px;
+}
+
+.project-meta span{
+display:inline-block;
+padding:6px 10px;
+border-radius:999px;
+background:rgba(232,141,57,0.12);
+color:var(--color-accent);
+font-size:0.84rem;
+font-weight:600;
+}
+
+.project-card-body h3{
+margin:0 0 12px;
+line-height:1.2;
+font-size:1.2rem;
+transition:color var(--transition);
+}
+
+.project-card-body p{
+margin:0 0 12px;
+color:rgba(45,43,39,0.82);
+}
+
+.project-link{
+display:inline-flex;
+margin-top:6px;
+color:var(--color-accent);
+text-decoration:none;
+font-weight:600;
+}
+
+.about-actions{
+margin-top:24px;
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+}
+
+@media(max-width:1100px){
+.project-grid-custom{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:980px){
+.intro-grid{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:700px){
+.project-grid-custom{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:560px){
+
+.subpage-hero{
+padding:64px 0 34px;
+}
+
+.content-section{
+padding:24px 0 64px;
+}
+
+.content-card,
+.project-card-body{
+padding:22px;
+}
+
+.project-card-custom img{
+height:200px;
+}
+
+.about-actions .button,
+.about-actions .contact-button{
+width:100%;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>VDW Projects & Solutions</h1>
-      <nav>
-        <a href="/en/index.html">Home</a>
-        <a href="/en/industrial.html">Industrial</a>
-        <a href="/en/residential.html">Residential</a>
-        <a href="/en/about.html">About</a>
-        <a href="/en/contact.html">Contact</a>
-        <a href="/nl/index.html">NL</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <h2>Residential</h2>
-    <p><strong>Complete electrical solutions for homes and apartments.</strong></p>
-    <p>
-      VDW Projects & Solutions helps homeowners design and implement electrical installations tailored to their usage, comfort and future plans.
-    </p>
+<header class="site-header">
+<div class="container header-inner">
 
-    <h3>Services</h3>
-    <ul>
-      <li>Full electrical installations (new builds & renovations)</li>
-      <li>Traditional wiring or home automation</li>
-      <li>Charging stations with load balancing & PV integration</li>
-      <li>Home batteries and energy management</li>
-      <li>Smart solutions customized for your consumption</li>
-    </ul>
+<a href="index.html" class="logo-link">
+<img src="../assets/logo.png" alt="VDW Projects & Solutions logo" class="logo">
+</a>
 
-    <h3>Projects</h3>
-    <div class="project-card">
-      <div class="project-header">
-        <h4>Residential Installation – Smart Charging Station</h4>
-      </div>
-      <div class="project-content-bg" style="background-image:url('/assets/Laadpaal.jpg')">
-        <div class="overlay">
-          <p>Charging station with load balancing & home automation for optimal energy use.</p>
-          <a href="/en/projects/charging-station.html">More info →</a>
-        </div>
-      </div>
-    </div>
-  </main>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="industrial.html">Industrial</a>
+<a href="residential.html" class="active">Residential</a>
+<a href="/nl/residentieel.html" class="lang-link">NL</a>
+</nav>
 
-<footer>
-  <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 2rem 0; gap: 2rem;">
-    
-    <!-- Logo -->
-    <div style="flex: 1 1 200px;">
-      <img src="/assets/logo.png" alt="VDW Projects & Solutions logo" style="max-height: 80px;">
-    </div>
+</div>
+</header>
 
-    <!-- Company details -->
-    <div style="flex: 2 1 300px; color: #333;">
-      <p style="margin: 0;"><strong>VDW Projects & Solutions</strong></p>
-      <p style="margin: 0;">Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
-      <p style="margin: 0;">
-        <a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a>
-      </p>
-      <p style="margin: 0;">
-        <a href="tel:+32479613739">+32 479 61 37 39</a>
-      </p>
-      <p style="margin: 0;">VAT BE1015.830.223</p>
-    </div>
 
-    <!-- Legal links -->
-    <div style="flex: 1 1 220px;">
-      <p style="margin: 0 0 0.5rem 0;"><strong>Legal</strong></p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/privacy.pdf" target="_blank" rel="noopener">
-          Privacy Policy
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2B
-        </a>
-      </p>
-      <p style="margin: 0;">
-        <a href="/assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank" rel="noopener">
-          Terms & Conditions – B2C
-        </a>
-      </p>
-    </div>
+<main>
 
-  </div>
+<section class="subpage-hero">
+<div class="container">
 
-  <div style="text-align: center; font-size: 0.85rem; color: #666; padding-bottom: 1rem;">
-    © 2025 VDW Projects & Solutions. All rights reserved.
-  </div>
+<p class="subpage-label">Residential</p>
+
+<h1>Residential installations that are safe, compliant and ready for the future.</h1>
+
+<p>
+From EV charging solutions to renovations and compliance works.
+Always with attention to a clean execution and an electrical installation
+that is built logically, safely and with an eye on the future.
+</p>
+
+</div>
+</section>
+
+
+<section class="content-section">
+<div class="container">
+
+<div class="intro-grid">
+
+<article class="content-card">
+
+<h2>Services</h2>
+
+<ul class="bullet-list">
+<li>Full electrical installations for new-build and renovation</li>
+<li>Classic installations or home automation</li>
+<li>EV chargers with load balancing and PV integration</li>
+<li>Home batteries and energy management</li>
+<li>Bringing existing installations into compliance</li>
+</ul>
+
+</article>
+
+
+<article class="content-card">
+
+<h3>Focus</h3>
+
+<p>
+Residential projects should not only be neatly executed,
+but also logical, safe and compliant.
+</p>
+
+<p>
+That's why the focus is on clear advice,
+correct sizing and a clean handover
+that remains reliable in the long term.
+</p>
+
+<div class="about-actions">
+
+<a class="contact-button" href="mailto:info@vdw-ps.be">Contact us</a>
+
+<a class="button button-secondary" href="about.html">More about our approach</a>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="section-title-block">
+
+<h2>Projects</h2>
+
+<p>
+A selection of residential projects involving charging solutions,
+renovation of electrical installations and compliance works
+for the sale or purchase of homes.
+</p>
+
+</div>
+
+
+
+<div class="project-grid-custom">
+
+
+<a class="project-card-custom" href="/en/projects/ev-charger.html">
+
+<img src="../assets/Laadpaal.jpg" alt="EV charger installation">
+
+<div class="project-card-body">
+
+<div class="project-meta">
+<span>Residential</span>
+<span>Smart charging</span>
+</div>
+
+<h3>EV charger with smart control</h3>
+
+<p>
+Installation of an EV charger with load balancing,
+matched to the available capacity of the home
+and prepared for integration with solar panels.
+</p>
+
+<span class="project-link">More info →</span>
+
+</div>
+</a>
+
+
+
+<a class="project-card-custom" href="/en/projects/compliance-sale.html">
+
+<img src="../assets/SLD.png" alt="Bringing an electrical installation into compliance for the sale of a home">
+
+<div class="project-card-body">
+
+<div class="project-meta">
+<span>Compliance</span>
+<span>Sale</span>
+</div>
+
+<h3>Bringing an electrical installation into compliance for sale</h3>
+
+<p>
+Drafting of electrical diagrams, modifications to the distribution board
+and targeted renovations to bring an existing installation into compliance
+for the sale of a home.
+</p>
+
+<span class="project-link">More info →</span>
+
+</div>
+</a>
+
+
+
+<a class="project-card-custom" href="/en/projects/compliance-occupancy.html">
+
+<img src="../assets/elek-kast.jpg" alt="Bringing an electrical installation into compliance for occupancy">
+
+<div class="project-card-body">
+
+<div class="project-meta">
+<span>Renovation</span>
+<span>Occupancy</span>
+</div>
+
+<h3>Bringing an electrical installation into compliance for occupancy</h3>
+
+<p>
+Renewal of switches, sockets and distribution board
+so an existing home can be used safely and in compliance
+after purchase.
+</p>
+
+<span class="project-link">More info →</span>
+
+</div>
+</a>
+
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="footer-card">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+<img src="../assets/logo.png" alt="VDW Projects & Solutions logo">
+</div>
+
+<div class="footer-contact">
+<p><strong>VDW Projects & Solutions</strong></p>
+<p>Achturenstraat 5, 3010 Kessel-Lo, Belgium</p>
+<p><a href="mailto:info@vdw-ps.be">info@vdw-ps.be</a></p>
+<p><a href="tel:+32479613739">+32 479 61 37 39</a></p>
+<p>VAT BE1015.830.223</p>
+</div>
+
+<div class="footer-legal">
+<p><strong>Legal</strong></p>
+<ul>
+<li><a href="../assets/docs/privacy.pdf" target="_blank">Privacy policy</a></li>
+<li><a href="../assets/docs/algemene-voorwaarden-b2b.pdf" target="_blank">Terms &amp; conditions B2B</a></li>
+<li><a href="../assets/docs/algemene-voorwaarden-b2c.pdf" target="_blank">Terms &amp; conditions B2C</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 VDW Projects & Solutions. All rights reserved.
+</div>
+
+</div>
+</div>
+
 </footer>
+
 </body>
 </html>
